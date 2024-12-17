@@ -1,16 +1,15 @@
 {
   "files": {
     "main.css": "/primo-portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/primo-portfolio/static/js/main.8e8b7b86.js",
+    "main.js": "/primo-portfolio/static/js/main.d361978e.js",
     "static/js/453.7b124711.chunk.js": "/primo-portfolio/static/js/453.7b124711.chunk.js",
-    "static/media/logo.svg": "/primo-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/primo-portfolio/index.html",
     "main.f855e6bc.css.map": "/primo-portfolio/static/css/main.f855e6bc.css.map",
-    "main.8e8b7b86.js.map": "/primo-portfolio/static/js/main.8e8b7b86.js.map",
+    "main.d361978e.js.map": "/primo-portfolio/static/js/main.d361978e.js.map",
     "453.7b124711.chunk.js.map": "/primo-portfolio/static/js/453.7b124711.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.8e8b7b86.js"
+    "static/js/main.d361978e.js"
   ]
 }

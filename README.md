@@ -39,9 +39,9 @@ A personal portfolio website showcasing my projects, skills, and professional jo
 
 3. Start the development server
    ```bash
-   yarn start
+   yarn dev
    # or
-   npm start
+   npm dev
    ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view the site in your browser
@@ -55,17 +55,17 @@ primo-portfolio/
 │   ├── components/
 │   ├── pages/
 │   ├── styles/
-│   └── App.js
+│   └── App.tsx
 └── README.md
 ```
 
 ## 🔧 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `yarn start` | Runs the app in development mode |
+| Command      | Description |
+|--------------|-------------|
+| `yarn dev`   | Runs the app in development mode |
 | `yarn build` | Builds the app for production |
-| `yarn test` | Runs the test suite |
+| `yarn test`  | Runs the test suite |
 
 ## 🌟 Features
 

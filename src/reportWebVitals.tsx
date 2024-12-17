@@ -1,4 +1,4 @@
-const reportWebVitals = onPerfEntry => {
+const reportWebVitals = (onPerfEntry?: (metric: WebVitalsMetric) => void) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     import('web-vitals').then(({ getCLS, getFID, getFCP, getLCP, getTTFB }) => {
       getCLS(onPerfEntry);
@@ -11,3 +11,10 @@ const reportWebVitals = onPerfEntry => {
 };
 
 export default reportWebVitals;
+
+export interface WebVitalsMetric {
+  name: string;
+  delta: number;
+  id: string;
+  value: number;
+}

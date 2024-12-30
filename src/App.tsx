@@ -7,6 +7,7 @@ import ExperienceSection from "./components/ExperienceSection";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import { useCursorPosition } from "./hooks/useCursorPosition";
+import {selectiveShow} from "./App.styles";
 
 function App() {
     const cursorPosition = useCursorPosition();
@@ -23,32 +24,37 @@ function App() {
                     }}
                 />
 
-                <aside css={styles.leftPanel}>
+                <div css={styles.leftPanel}>
                     <HeroSection />
-                    <nav css={styles.navigation}>
-                        <button onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}>
-                            About
-                        </button>
-                        <button onClick={() => document.getElementById('experience')?.scrollIntoView({ behavior: 'smooth' })}>
-                            Experience
-                        </button>
-                        <button onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}>
-                            Projects
-                        </button>
-                    </nav>
-                </aside>
+                    <div css={selectiveShow}>
+                        <nav css={styles.navigationButtons}>
+                            <button
+                                onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>
+                                About
+                            </button>
+                            <button
+                                onClick={() => document.getElementById('experience')?.scrollIntoView({behavior: 'smooth'})}>
+                                Experience
+                            </button>
+                            <button
+                                onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})}>
+                                Projects
+                            </button>
+                        </nav>
+                    </div>
+                </div>
 
-                <main css={styles.rightPanel}>
+                <div css={styles.rightPanel}>
                     <section id="about">
-                        <AboutSection />
+                        <AboutSection/>
                     </section>
                     <section id="experience">
-                        <ExperienceSection />
+                        <ExperienceSection/>
                     </section>
                     <section id="projects">
-                        <ProjectsSection />
+                        <ProjectsSection/>
                     </section>
-                </main>
+                </div>
             </div>
         </>
     );

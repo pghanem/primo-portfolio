@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import React from 'react';
 import { Bulldozer } from '@phosphor-icons/react';
 import * as styles from './HeroSection.styles';

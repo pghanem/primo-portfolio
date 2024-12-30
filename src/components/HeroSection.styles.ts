@@ -5,16 +5,17 @@ export const heroContainer = css`
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #fef9c3;
     text-align: center;
+    color: white;
 `;
 
 export const title = css`
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white;
 `;
 
 export const message = css`
-  color: #666;
+    color: rgba(255, 255, 255, 0.8);
 `;

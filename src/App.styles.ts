@@ -58,21 +58,22 @@ export const selectiveShow = css`
     }
 `
 
-export const navigationButtons = css`
+export const navigationContainer = css`
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 1rem;
-
-    button {
-        background: transparent;
-        border: none;
-        color: white;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background: rgba(255, 255, 255, 0.1);
-        }
-    }
 `;
+
+export const navigationButton = css`
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+
+    &:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+`

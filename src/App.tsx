@@ -27,19 +27,22 @@ function App() {
                 <div css={styles.leftPanel}>
                     <HeroSection />
                     <div css={selectiveShow}>
-                        <nav css={styles.navigationButtons}>
-                            <button
+                        <nav css={styles.navigationContainer}>
+                            <div
+                                css={styles.navigationButton}
                                 onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>
-                                About
-                            </button>
-                            <button
+                                ABOUT
+                            </div>
+                            <div
+                                css={styles.navigationButton}
                                 onClick={() => document.getElementById('experience')?.scrollIntoView({behavior: 'smooth'})}>
-                                Experience
-                            </button>
-                            <button
+                                EXPERIENCE
+                            </div>
+                            <div
+                                css={styles.navigationButton}
                                 onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})}>
-                                Projects
-                            </button>
+                                PROJECTS
+                            </div>
                         </nav>
                     </div>
                 </div>

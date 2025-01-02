@@ -2,10 +2,10 @@
 import { Global } from '@emotion/react';
 import * as styles from "./App.styles";
 import { globalStyles } from './GlobalStyles';
-import HeroSection from "./components/HeroSection";
-import ExperienceSection from "./components/ExperienceSection";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
+import HeroSection from "./sections/HeroSection";
+import ExperienceSection from "./sections/ExperienceSection";
+import AboutSection from "./sections/AboutSection";
+import ProjectsSection from "./sections/ProjectsSection";
 import { useCursorPosition } from "./hooks/useCursorPosition";
 import {selectiveShow} from "./App.styles";
 

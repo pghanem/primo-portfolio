@@ -7,37 +7,26 @@ export const container = css`
 
 export const cursorGlow = css`
     position: fixed;
-    width: 1200px;
-    height: 1200px;
+    width: 1000px;
+    height: 1000px;
     background: radial-gradient(
             circle,
-            rgba(52, 90, 255, 0.45) 0%,
-            rgba(52, 85, 225, 0.40) 10%,
-            rgba(52, 80, 225, 0.30) 20%,
-            rgba(52, 75, 225, 0.20) 30%,
-            rgba(52, 69, 225, 0.15) 40%,
-            rgba(52, 69, 225, 0.10) 50%,
+            rgba(52, 90, 255, 0.50) 0%,
+            rgba(52, 85, 225, 0.40) 15%,
+            rgba(52, 80, 225, 0.30) 30%,
+            rgba(52, 75, 225, 0.20) 40%,
+            rgba(52, 69, 225, 0.15) 50%,
+            rgba(52, 75, 225, 0.10) 55%,
             rgba(52, 69, 225, 0.05) 60%,
-            rgba(52, 69, 225, 0) 70%
+            rgba(52, 69, 225, 0.0) 65%
     );
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
     opacity: 0.3;
 
-    @media screen and (max-width: 640px) {
-        background: radial-gradient(
-                circle at 50% 35%,
-                rgba(52, 69, 255, 0.4) 0%,
-                rgba(52, 69, 255, 0.3) 20%,
-                rgba(52, 69, 255, 0.2) 30%,
-                rgba(15, 23, 42, 0.2) 50%,
-                rgba(15, 23, 42, 0) 100%
-        );
-    }
-
-    @media screen and (max-width: 360px) {
-        transform: translate(-50%, -30%);
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
 `;
 

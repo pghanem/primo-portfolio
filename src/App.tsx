@@ -8,12 +8,17 @@ import AboutSection from "./sections/AboutSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import { useCursorPosition } from "./hooks/useCursorPosition";
 import {selectiveShow} from "./App.styles";
+import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Analytics } from "@vercel/analytics/react"
+import React from "react";
 
 function App() {
     const cursorPosition = useCursorPosition();
 
     return (
         <>
+            <SpeedInsights />
+            <Analytics />
             <Global styles={globalStyles} />
             <div css={styles.container}>
                 <div

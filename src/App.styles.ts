@@ -1,10 +1,5 @@
 import { css } from '@emotion/react';
 
-export const container = css`
-    width: 100%;
-    display: flex;
-`;
-
 export const cursorGlow = css`
     position: fixed;
     width: 1000px;
@@ -30,22 +25,62 @@ export const cursorGlow = css`
     }
 `;
 
+export const container = css`
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+`;
+
+export const innerWrapper = css`
+    display: flex;
+    width: 100%;
+    max-width: 1220px;
+    padding: 0 20px;
+
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        padding: 0;
+    }
+`;
+
 export const leftPanel = css`
-    min-width: 520px;
-    flex: 4;
+    flex: 47;
+    max-width: 560px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        padding-left: 20px;
+    }
 `;
 
 export const rightPanel = css`
-    flex: 6;
+    flex: 53;
+    max-width: 610px;
+    min-width: 0;
+    width: calc(100% - 60px);
+    box-sizing: border-box;
+
+    @media (max-width: 1024px) {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 20px;
+    }
 `;
 
 export const selectiveShow = css`
     display: none;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         display: flex;
     }
-`
+`;
 
 export const navigationContainer = css`
     display: flex;

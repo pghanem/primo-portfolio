@@ -1,6 +1,16 @@
 import { css } from '@emotion/react';
 
 export const globalStyles = css`
+
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
     html, body {
         background-color: #0F172A;
     }

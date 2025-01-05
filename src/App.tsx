@@ -21,47 +21,49 @@ function App() {
             <Analytics />
             <Global styles={globalStyles} />
             <div css={styles.container}>
-                <div
-                    css={styles.cursorGlow}
-                    style={{
-                        left: `${cursorPosition.x}px`,
-                        top: `${cursorPosition.y}px`
-                    }}
-                />
+                <div css={styles.innerWrapper}>
+                    <div
+                        css={styles.cursorGlow}
+                        style={{
+                            left: `${cursorPosition.x}px`,
+                            top: `${cursorPosition.y}px`
+                        }}
+                    />
 
-                <div css={styles.leftPanel}>
-                    <HeroSection />
-                    <div css={selectiveShow}>
-                        <nav css={styles.navigationContainer}>
-                            <div
-                                css={styles.navigationButton}
-                                onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>
-                                ABOUT
-                            </div>
-                            <div
-                                css={styles.navigationButton}
-                                onClick={() => document.getElementById('experience')?.scrollIntoView({behavior: 'smooth'})}>
-                                EXPERIENCE
-                            </div>
-                            <div
-                                css={styles.navigationButton}
-                                onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})}>
-                                PROJECTS
-                            </div>
-                        </nav>
+                    <div css={styles.leftPanel}>
+                        <HeroSection/>
+                        <div css={selectiveShow}>
+                            <nav css={styles.navigationContainer}>
+                                <div
+                                    css={styles.navigationButton}
+                                    onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>
+                                    ABOUT
+                                </div>
+                                <div
+                                    css={styles.navigationButton}
+                                    onClick={() => document.getElementById('experience')?.scrollIntoView({behavior: 'smooth'})}>
+                                    EXPERIENCE
+                                </div>
+                                <div
+                                    css={styles.navigationButton}
+                                    onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})}>
+                                    PROJECTS
+                                </div>
+                            </nav>
+                        </div>
                     </div>
-                </div>
 
-                <div css={styles.rightPanel}>
-                    <section id="about">
-                        <AboutSection/>
-                    </section>
-                    <section id="experience">
-                        <ExperienceSection/>
-                    </section>
-                    <section id="projects">
-                        <ProjectsSection/>
-                    </section>
+                    <div css={styles.rightPanel}>
+                        <section id="about">
+                            <AboutSection/>
+                        </section>
+                        <section id="experience">
+                            <ExperienceSection/>
+                        </section>
+                        <section id="projects">
+                            <ProjectsSection/>
+                        </section>
+                    </div>
                 </div>
             </div>
         </>

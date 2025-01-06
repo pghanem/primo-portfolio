@@ -53,7 +53,7 @@ function App() {
                         </div>
                     </div>
 
-                    <div css={styles.rightPanel}>
+                    <div>
                         <section id="about">
                             <AboutSection/>
                         </section>

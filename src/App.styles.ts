@@ -2,8 +2,8 @@ import { css } from '@emotion/react';
 
 export const cursorGlow = css`
     position: fixed;
-    width: 1000px;
-    height: 1000px;
+    width: 1100px;
+    height: 1100px;
     background: radial-gradient(
             circle,
             rgba(52, 90, 255, 0.50) 0%,
@@ -15,6 +15,7 @@ export const cursorGlow = css`
             rgba(52, 69, 225, 0.05) 60%,
             rgba(52, 69, 225, 0.0) 65%
     );
+    z-index: 9999;
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -27,62 +28,46 @@ export const cursorGlow = css`
 
 export const container = css`
     width: 100%;
-    display: flex;
-    justify-content: center;
     padding: 5rem 2rem;
 
     @media (max-width: 1024px) {
-        flex-direction: column;
-        padding: 1rem 0;
+        padding: 1rem 20px;
     }
 `;
 
 export const innerWrapper = css`
-    display: flex;
-    width: 100%;
-    max-width: 1220px;
-    padding: 0 20px;
+    max-width: 1175px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 3fr 4fr;
 
     @media (max-width: 1024px) {
-        flex-direction: column;
-        padding: 0;
+        grid-template-columns: 1fr;
     }
 `;
 
 export const leftPanel = css`
-    flex: 3;
-    width: 100%;
-    box-sizing: border-box;
+    position: sticky;
+    top: 5rem;
+    height: fit-content;
 
     @media (max-width: 1024px) {
-        max-width: 100%;
-        padding-left: 20px;
-    }
-`;
-
-export const rightPanel = css`
-    flex: 4;
-    max-width: 610px;
-    min-width: 0;
-    width: calc(100% - 60px);
-    box-sizing: border-box;
-
-    @media (max-width: 1024px) {
-        max-width: 100%;
-        width: 100%;
-        padding: 0 20px;
+        position: relative;
+        top: 0;
+        
     }
 `;
 
 export const selectiveShow = css`
-    display: none;
+    display: flex;
 
-    @media (min-width: 1025px) {
-        display: flex;
+    @media (max-width: 1024px) {
+        display: none;
     }
 `;
 
 export const navigationContainer = css`
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -92,10 +77,11 @@ export const navigationContainer = css`
 export const navigationButton = css`
     background: transparent;
     border: none;
-    color: white;
+    color: rgb(226 232 240);
     cursor: pointer;
     transition: all 0.3s ease;
-    font-size: 14px;
+    letter-spacing: 1.5px;
+    font-size: 0.75rem;
 
     &:hover {
         background: rgba(255, 255, 255, 0.1);

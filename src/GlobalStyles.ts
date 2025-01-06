@@ -7,10 +7,11 @@ export const globalStyles = css`
     }
 
     html, body {
-        scrollbar-gutter: stable;
         width: 100%;
         max-width: 100vw;
-        overflow-x: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
         background-color: #0F172A;
     }
     

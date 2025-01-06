@@ -7,11 +7,10 @@ export const globalStyles = css`
     }
 
     html, body {
+        scrollbar-gutter: stable;
         width: 100%;
         max-width: 100vw;
         overflow-x: hidden;
-    }
-    html, body {
         background-color: #0F172A;
     }
     

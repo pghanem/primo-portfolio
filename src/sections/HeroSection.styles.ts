@@ -1,14 +1,17 @@
 import { css, SerializedStyles } from "@emotion/react";
 
 export const heroContainer = css`
-    min-height: 300px;
     display: flex;
+    max-width: 400px;
+
+    @media (max-width: 1024px) {
+        padding: 0;
+    }
 `;
 
 export const name = css`
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 0.5rem;
     color: white;
 `;
 

@@ -29,9 +29,11 @@ export const container = css`
     width: 100%;
     display: flex;
     justify-content: center;
+    padding: 5rem 2rem;
 
     @media (max-width: 1024px) {
         flex-direction: column;
+        padding: 1rem 0;
     }
 `;
 
@@ -48,9 +50,7 @@ export const innerWrapper = css`
 `;
 
 export const leftPanel = css`
-    flex: 47;
-    max-width: 560px;
-    min-width: 0;
+    flex: 3;
     width: 100%;
     box-sizing: border-box;
 
@@ -61,7 +61,7 @@ export const leftPanel = css`
 `;
 
 export const rightPanel = css`
-    flex: 53;
+    flex: 4;
     max-width: 610px;
     min-width: 0;
     width: calc(100% - 60px);

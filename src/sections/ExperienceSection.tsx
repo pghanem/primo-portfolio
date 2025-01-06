@@ -6,9 +6,40 @@ import ExperienceBlock from "../components/ExperienceBlock";
 
 const ExperienceSection = (): React.ReactElement => {
     return <div css={styles.experienceContainer}>
-        <ExperienceBlock />
-        <ExperienceBlock />
-        <ExperienceBlock />
+        <ExperienceBlock
+            startYear="2021"
+            endYear="Present"
+            jobTitle="Team Lead Software Developer"
+            prevTitle="Intermediate Software Developer"
+            companyName="Jostle"
+            description="Leading and mentoring a development team while driving key technical initiatives. I architected Collections, a unified platform approach to displaying list-type data, and led the UI team's complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface."
+            technologies={["React", "Redux", "Typescript", "Java", "GraphQL", "Docker"]}
+        />
+        <ExperienceBlock
+            startYear="2019"
+            endYear="2021"
+            jobTitle="Technical Architect"
+            prevTitle="Software Developer"
+            companyName="Ensemble"
+            description="Served as Technical Architect designing scalable Adobe CMS solutions and building full-stack media applications. Created automated workflows for Adobe InDesign to HTML conversion and delivered Netflix-style user experiences for Roku TV."
+            technologies={["Java", "Node.js", "React", "React Native"]}
+        />
+        <ExperienceBlock
+            startYear="2017"
+            endYear="2018"
+            jobTitle="Software Developer Co-op"
+            companyName="iSpace Lab"
+            description="Developed an immersive VR game, focusing on optimization of checkpoint systems and user interaction design. Created compelling experiences through efficient model management and scripting solutions."
+            technologies={["C#", "Unity", "Cinema 4D"]}
+        />
+        <ExperienceBlock
+            startYear="2014"
+            endYear="2016"
+            jobTitle="Software Engineer in Test"
+            companyName="Finger Food Studios"
+            description="Led test automation initiatives across web, mobile, Xbox, and Microsoft HoloLens platforms. Implemented comprehensive QA processes that strengthened product reliability and user experience."
+            technologies={["Selenium WebDriver", "Python"]}
+        />
     </div>
 }
 

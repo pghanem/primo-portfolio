@@ -1,9 +1,61 @@
-import { css, SerializedStyles } from "@emotion/react";
+import { css } from "@emotion/react";
 
-export const blockContainer = css`
-    box-sizing: border-box;
+export const experienceContainer = css`
+    border-radius: 8px;
     padding: 1rem 1.5rem;
-    border: 1px solid rgb(226 232 240);
-    border-radius: 6px;
-    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 18px;
+    margin-bottom: 12px;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+`;
+
+export const yearSection = css`
+    font-size: 0.9rem;
+`;
+
+export const contentSection = css`
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+`;
+
+export const jobTitle = css`
+    color: rgb(226 232 240);
+    margin: 0;
+    text-decoration: none;
+  
+    &:hover {
+        color: #41D9CC;
+        cursor: pointer;
+    }
+`;
+
+export const prevTitle = css`
+    color: #8A8F9E;
+    margin-bottom: 0.5rem;
+    line-height: 0;
+    text-decoration: none;
+`;
+
+
+export const description = css`
+    font-size: 0.9rem;
+    line-height: 1.6;
+`;
+
+export const techPillsContainer = css`
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+`;
+
+export const techPill = css`
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.85rem;
 `;

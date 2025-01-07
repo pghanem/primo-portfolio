@@ -25,12 +25,12 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
                 targets: '#hexagon path',
                 strokeDashoffset: [anime.setDashoffset, 0],
                 easing: 'easeInOutQuart',
-                duration: 2000,
-                delay: (_el: any, i: number) => i * 250,
+                duration: 1800,
+                delay: (_el: any, i: number) => i * 220,
             })
             .add({
                 targets: '#hexagon #P',
-                duration: 1000,
+                duration: 900,
                 opacity: 1,
                 easing: 'easeInOutQuart'
             });

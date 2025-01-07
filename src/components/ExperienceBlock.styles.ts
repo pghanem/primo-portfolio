@@ -39,7 +39,7 @@ export const jobTitle = css`
 export const prevTitle = css`
     color: #8A8F9E;
     margin-bottom: 0.5rem;
-    line-height: 0;
+    margin-top: -1rem;
     text-decoration: none;
 `;
 

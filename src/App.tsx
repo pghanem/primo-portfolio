@@ -14,8 +14,8 @@ import React, {useEffect, useState} from "react";
 import SplashScreen from "./components/SplashScreen";
 
 function App() {
-    const cursorPosition = useCursorPosition();
     const [loading, setLoading] = useState<boolean>(true);
+    const cursorPosition = useCursorPosition(loading);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
     useEffect(() => {
@@ -44,7 +44,7 @@ function App() {
                 {loading ? <SplashScreen onAnimationComplete={() => setLoading(false)} /> :
                     <div css={styles.container}>
                         <div css={styles.innerWrapper}>
-                            <div
+                            {!loading && <div
                                 css={styles.cursorGlow}
                                 style={isSmallScreen ? {
                                     left: '0px',
@@ -53,7 +53,7 @@ function App() {
                                     left: `${cursorPosition.x}px`,
                                     top: `${cursorPosition.y}px`
                                 }}
-                            />
+                            />}
 
                             <div css={styles.leftPanel}>
                                 <HeroSection/>

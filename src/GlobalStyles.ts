@@ -25,7 +25,7 @@ export const globalStyles = css`
         -moz-osx-font-smoothing: grayscale;
         color: #A0ADBE;
         line-height: 1.6;
-        font-weight: 300;
+        font-weight: 400;
         text-rendering: optimizeLegibility;
     }
 `;

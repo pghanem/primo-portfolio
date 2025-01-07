@@ -9,6 +9,7 @@ interface ExperienceBlockProps {
     jobTitle: string;
     prevTitle?: string;
     companyName: string;
+    companyUrl: string;
     description: string;
     technologies: string[];
 }
@@ -20,12 +21,17 @@ export const ExperienceBlock: React.FC<ExperienceBlockProps> = (props: Experienc
         jobTitle,
         prevTitle,
         companyName,
+        companyUrl,
         description,
         technologies
     } = props;
 
     return (
-        <div css={styles.experienceContainer}>
+        <div
+            onClick={() => window.open(companyUrl, '_blank', 'noopener,noreferrer')}
+            role="button"
+            tabIndex={0}
+            css={styles.experienceContainer}>
             <div css={styles.yearSection}>
                 {startYear} - {endYear}
             </div>

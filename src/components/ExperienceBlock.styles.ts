@@ -8,8 +8,10 @@ export const experienceContainer = css`
     gap: 18px;
     margin-bottom: 12px;
     transition: background-color 0.2s ease;
+    cursor: pointer;
 
     &:hover {
+        transform: scale(1.015);
         background-color: rgba(255, 255, 255, 0.05);
     }
 `;
@@ -30,7 +32,6 @@ export const jobTitle = css`
     text-decoration: none;
   
     &:hover {
-        color: #41D9CC;
         cursor: pointer;
     }
 `;
@@ -55,7 +56,9 @@ export const techPillsContainer = css`
 `;
 
 export const techPill = css`
+    font-size: 0.75rem;
+    font-weight: 500;
     padding: 4px 12px;
     border-radius: 16px;
-    font-size: 0.85rem;
+    border: 1px solid rgb(226 232 240);
 `;

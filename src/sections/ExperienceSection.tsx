@@ -12,6 +12,7 @@ const ExperienceSection = (): React.ReactElement => {
             jobTitle="Team Lead Software Developer"
             prevTitle="Intermediate Software Developer"
             companyName="Jostle"
+            companyUrl="https://www.jostle.me"
             description="Leading and mentoring a development team while driving key technical initiatives. I architected Collections, a unified platform approach to displaying list-type data, and led the UI team's complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface."
             technologies={["React", "Redux", "Typescript", "Java", "GraphQL", "Docker"]}
         />
@@ -21,6 +22,7 @@ const ExperienceSection = (): React.ReactElement => {
             jobTitle="Technical Architect"
             prevTitle="Software Developer"
             companyName="Ensemble"
+            companyUrl="https://www.ensemble.com/"
             description="Served as Technical Architect designing scalable Adobe CMS solutions and building full-stack media applications. Created automated workflows for Adobe InDesign to HTML conversion and delivered Netflix-style user experiences for Roku TV."
             technologies={["Java", "Node.js", "React", "React Native"]}
         />
@@ -29,6 +31,7 @@ const ExperienceSection = (): React.ReactElement => {
             endYear="2018"
             jobTitle="Software Developer Co-op"
             companyName="iSpace Lab"
+            companyUrl="https://ispace.iat.sfu.ca/"
             description="Developed an immersive VR game, focusing on optimization of checkpoint systems and user interaction design. Created compelling experiences through efficient model management and scripting solutions."
             technologies={["C#", "Unity", "Cinema 4D"]}
         />
@@ -36,7 +39,8 @@ const ExperienceSection = (): React.ReactElement => {
             startYear="2014"
             endYear="2016"
             jobTitle="Software Engineer in Test"
-            companyName="Finger Food Studios"
+            companyName="Finger Food Studios (Acquired by Unity, May 2020)"
+            companyUrl="https://unity.com/"
             description="Led test automation initiatives across web, mobile, Xbox, and Microsoft HoloLens platforms. Implemented comprehensive QA processes that strengthened product reliability and user experience."
             technologies={["Selenium WebDriver", "Python"]}
         />

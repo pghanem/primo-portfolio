@@ -20,10 +20,6 @@ export const cursorGlow = css`
     pointer-events: none;
     transform: translate(-50%, -50%);
     opacity: 0.3;
-
-    @media screen and (max-width: 1024px) {
-        display: none;
-    }
 `;
 
 export const container = css`

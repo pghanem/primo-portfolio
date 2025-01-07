@@ -16,6 +16,17 @@ import SplashScreen from "./components/SplashScreen";
 function App() {
     const cursorPosition = useCursorPosition();
     const [loading, setLoading] = useState<boolean>(true);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 1024);
+        };
+        handleResize();
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -35,7 +46,10 @@ function App() {
                         <div css={styles.innerWrapper}>
                             <div
                                 css={styles.cursorGlow}
-                                style={{
+                                style={isSmallScreen ? {
+                                    left: '0px',
+                                    top: '0px'
+                                } : {
                                     left: `${cursorPosition.x}px`,
                                     top: `${cursorPosition.y}px`
                                 }}

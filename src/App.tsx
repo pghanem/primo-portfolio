@@ -7,13 +7,13 @@ import ExperienceSection from "./sections/ExperienceSection";
 import AboutSection from "./sections/AboutSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import { useCursorPosition } from "./hooks/useCursorPosition";
-import {selectiveShow} from "./App.styles";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
 import React, {useEffect, useState} from "react";
 import SplashScreen from "./components/SplashScreen";
 import SocialLinks from "./components/SocialLinks";
 import classNames from "classnames";
+import Navigation from "./components/Navigation";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -72,26 +72,7 @@ function App() {
 
                             <div css={styles.leftPanel}>
                                 <HeroSection/>
-                                <div css={selectiveShow}>
-                                    <nav css={styles.navigationContainer}>
-                                        <div
-                                            css={styles.navigationButton}
-                                            onClick={() => document.getElementById('about')?.scrollIntoView({behavior: 'smooth'})}>
-                                            ABOUT
-                                        </div>
-                                        <div
-                                            css={styles.navigationButton}
-                                            onClick={() => document.getElementById('experience')?.scrollIntoView({behavior: 'smooth'})}>
-                                            EXPERIENCE
-                                        </div>
-                                        <div
-                                            css={styles.navigationButton}
-                                            onClick={() => document.getElementById('projects')?.scrollIntoView({behavior: 'smooth'})}>
-                                            PROJECTS
-                                        </div>
-                                    </nav>
-                                </div>
-
+                                <Navigation />
                                 <SocialLinks />
                             </div>
 

@@ -29,6 +29,17 @@ export const container = css`
     @media (max-width: 1024px) {
         padding: 1rem 20px;
     }
+
+    &.enter {
+        opacity: 0;
+        transform: scale(1.01);
+    }
+
+    &.enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 250ms, transform 250ms;
+    }
 `;
 
 export const innerWrapper = css`

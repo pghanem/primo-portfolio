@@ -13,11 +13,21 @@ import { Analytics } from "@vercel/analytics/react"
 import React, {useEffect, useState} from "react";
 import SplashScreen from "./components/SplashScreen";
 import SocialLinks from "./components/SocialLinks";
+import classNames from "classnames";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
     const cursorPosition = useCursorPosition(loading);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isEntered, setIsEntered] = useState(false);
+
+    useEffect(() => {
+        if (!loading) {
+            requestAnimationFrame(() => {
+                setIsEntered(true);
+            });
+        }
+    }, [loading]);
 
     useEffect(() => {
         const handleResize = () => {
@@ -43,7 +53,11 @@ function App() {
             <Analytics/>
             <Global styles={globalStyles}/>
                 {loading ? <SplashScreen onAnimationComplete={() => setLoading(false)} /> :
-                    <div css={styles.container}>
+                    <div css={styles.container}
+                         className={classNames({
+                             'enter': !isEntered,
+                             'enter-active': isEntered
+                         })}>
                         <div css={styles.innerWrapper}>
                             {!loading && <div
                                 css={styles.cursorGlow}

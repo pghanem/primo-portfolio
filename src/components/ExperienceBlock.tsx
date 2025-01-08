@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
+import React from "react";
 
-import * as styles from './ExperienceBlock.styles';
+import * as styles from "./ExperienceBlock.styles";
 
 interface ExperienceBlockProps {
     startYear: string;
@@ -28,7 +28,7 @@ export const ExperienceBlock: React.FC<ExperienceBlockProps> = (props: Experienc
 
     return (
         <div
-            onClick={() => window.open(companyUrl, '_blank', 'noopener,noreferrer')}
+            onClick={() => window.open(companyUrl, "_blank", "noopener,noreferrer")}
             role="button"
             tabIndex={0}
             css={styles.experienceContainer}>

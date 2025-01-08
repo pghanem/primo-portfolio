@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import { Global } from '@emotion/react';
+import { Global } from "@emotion/react";
 import * as styles from "./App.styles";
-import { globalStyles } from './GlobalStyles';
+import { globalStyles } from "./GlobalStyles";
 import HeroSection from "./sections/HeroSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import AboutSection from "./sections/AboutSection";
@@ -17,7 +17,7 @@ import Navigation from "./components/Navigation";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
-    const cursorPosition = useCursorPosition(loading);
+    const cursorPosition = useCursorPosition(loading, 0.02);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [isEntered, setIsEntered] = useState(false);
 
@@ -34,8 +34,8 @@ function App() {
             setIsSmallScreen(window.innerWidth < 1024);
         };
         handleResize();
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
 
@@ -55,15 +55,15 @@ function App() {
                 {loading ? <SplashScreen onAnimationComplete={() => setLoading(false)} /> :
                     <div css={styles.container}
                          className={classNames({
-                             'enter': !isEntered,
-                             'enter-active': isEntered
+                             "enter": !isEntered,
+                             "enter-active": isEntered
                          })}>
                         <div css={styles.innerWrapper}>
                             {!loading && <div
                                 css={styles.cursorGlow}
                                 style={isSmallScreen ? {
-                                    left: '0px',
-                                    top: '0px'
+                                    left: "0px",
+                                    top: "0px"
                                 } : {
                                     left: `${cursorPosition.x}px`,
                                     top: `${cursorPosition.y}px`

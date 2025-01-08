@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import React from 'react';
-import * as styles from './HeroSection.styles';
+import React from "react";
+import * as styles from "./HeroSection.styles";
 
 const HeroSection = (): React.ReactElement => {
     return (

@@ -1,7 +1,7 @@
 /** @jsxImportSource @emotion/react */
-import React, {useEffect, useRef} from 'react';
-import anime from 'animejs';
-import * as styles from './SplashScreen.styles';
+import React, {useEffect, useRef} from "react";
+import anime from "animejs";
+import * as styles from "./SplashScreen.styles";
 
 const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void }): React.ReactElement => {
     const loopCount = useRef(0);
@@ -10,7 +10,7 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
     useEffect(() => {
         const anim = anime.timeline({
             loop: true,
-            direction: 'alternate',
+            direction: "alternate",
             loopComplete: () => {
                 loopCount.current++;
                 if (loopCount.current >= DESIRED_LOOPS) {
@@ -22,17 +22,17 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
 
         anim
             .add({
-                targets: '#hexagon path',
+                targets: "#hexagon path",
                 strokeDashoffset: [anime.setDashoffset, 0],
-                easing: 'easeInOutQuint',
+                easing: "easeInOutQuint",
                 duration: 1200,
                 delay: (_el: any, i: number) => i * 100,
             })
             .add({
-                targets: '#hexagon #P',
+                targets: "#hexagon #P",
                 duration: 1200,
                 opacity: 1,
-                easing: 'easeInOutQuad'
+                easing: "easeInOutQuad"
             });
 
         return () => anim.pause();

@@ -12,20 +12,36 @@ export const navigationContainer = css`
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 1rem;
 `;
 
-export const navigationButton = css`
-    background: transparent;
-    border: none;
+export const navigationButton = (isSelected: boolean): SerializedStyles => css`
     color: rgb(226 232 240);
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 1.5px;
     font-size: 0.75rem;
+    position: relative;
+    padding-left: ${isSelected ? '5rem' : '3rem'};
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: ${isSelected ? '4rem' : '2rem'};
+        height: 1px;
+        background-color: rgb(226 232 240);
+        transition: all 0.3s ease;
+    }
 
     &:hover {
-        background: rgba(255, 255, 255, 0.1);
+        padding-left: 5rem;
+
+        &::before {
+            width: 4rem;
+        }
     }
-`
+`;

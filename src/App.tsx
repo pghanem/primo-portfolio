@@ -12,6 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
 import React, {useEffect, useState} from "react";
 import SplashScreen from "./components/SplashScreen";
+import SocialLinks from "./components/SocialLinks";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -76,6 +77,8 @@ function App() {
                                         </div>
                                     </nav>
                                 </div>
+
+                                <SocialLinks />
                             </div>
 
                             <div>

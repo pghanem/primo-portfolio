@@ -13,7 +13,7 @@ const ExperienceSection = (): React.ReactElement => {
             prevTitle="Intermediate Software Developer"
             companyName="Jostle"
             companyUrl="https://www.jostle.me"
-            description='Leading and mentoring a development team while driving key technical initiatives. I architected Collections, a unified platform approach to displaying list-type data, and led the UI team"s complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface.'
+            description="Leading and mentoring a development team while driving key technical initiatives. I architected Collections, a unified platform approach to displaying list-type data, and led the UI team's complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface."
             technologies={["React", "Redux", "Typescript", "Java", "GraphQL", "Docker"]}
         />
         <ExperienceBlock

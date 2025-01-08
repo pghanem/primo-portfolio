@@ -24,7 +24,7 @@ export const cursorGlow = css`
 
 export const container = css`
     width: 100%;
-    padding: 5rem 2rem;
+    padding: 0 2rem;
 
     @media (max-width: 1024px) {
         padding: 1rem 20px;
@@ -55,12 +55,13 @@ export const innerWrapper = css`
 
 export const leftPanel = css`
     position: sticky;
-    top: 5rem;
+    top: 0;
+    padding-top: 5rem;
     height: fit-content;
 
     @media (max-width: 1024px) {
         position: relative;
         top: 0;
-        
+        padding-top: 0;
     }
 `;

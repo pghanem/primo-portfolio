@@ -6,7 +6,7 @@ export const heroContainer = css`
     max-width: 400px;
 
     @media (max-width: 1024px) {
-        padding: 0;
+        padding-top: 2.5rem;
     }
 `;
 
@@ -15,6 +15,10 @@ export const name = css`
     font-weight: 700;
     letter-spacing: -0.05rem;
     color: rgb(226 232 240);
+
+    @media (max-width: 1024px) {
+        font-size: 2.5rem;
+    }
 `;
 
 export const title = css`

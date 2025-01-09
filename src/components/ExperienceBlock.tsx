@@ -1,6 +1,9 @@
 /** @jsxImportSource @emotion/react */
 import React from "react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+
 import * as styles from "./ExperienceBlock.styles";
 
 interface ExperienceBlockProps {
@@ -28,7 +31,6 @@ export const ExperienceBlock: React.FC<ExperienceBlockProps> = (props: Experienc
 
     return (
         <div
-            onClick={() => window.open(companyUrl, "_blank", "noopener,noreferrer")}
             role="button"
             tabIndex={0}
             css={styles.experienceContainer}>
@@ -37,8 +39,8 @@ export const ExperienceBlock: React.FC<ExperienceBlockProps> = (props: Experienc
             </div>
 
             <div css={styles.contentSection}>
-                <div css={styles.jobTitle}>
-                    {jobTitle} · {companyName}
+                <div css={styles.jobTitle} onClick={() => window.open(companyUrl, "_blank", "noopener,noreferrer")}>
+                    {jobTitle} · {companyName} <FontAwesomeIcon icon={faUpRightFromSquare} css={{marginLeft: "5px"}}/>
                 </div>
 
                 {prevTitle && <div css={styles.prevTitle}>

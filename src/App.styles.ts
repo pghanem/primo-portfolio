@@ -26,7 +26,7 @@ export const paddedComponent = css`
     padding: 0 2rem;
 
     @media (max-width: 1024px) {
-        padding: 1rem 20px;
+        padding: 0 25px;
     }
 `
 
@@ -71,7 +71,7 @@ export const leftPanel = css`
 
 export const stickyHeader = css`
     position: sticky;
-    padding: 10px 20px;
+    padding: 25px;
     color: rgb(226 232 240);
     top: 0;
     width: auto;

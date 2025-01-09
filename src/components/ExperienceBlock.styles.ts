@@ -8,16 +8,28 @@ export const experienceContainer = css`
     gap: 18px;
     margin-bottom: 12px;
     transition: background-color 0.2s ease;
-    cursor: pointer;
+    cursor: default;
 
-    &:hover {
-        transform: scale(1.015);
-        background-color: rgba(255, 255, 255, 0.05);
+    @media (min-width: 1025px) {
+        &:hover {
+            transform: scale(1.015);
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 0 0 3rem 0;
     }
 `;
 
 export const yearSection = css`
     font-size: 0.9rem;
+
+    @media (max-width: 1024px) {
+        color: #8A8F9E;
+    }
 `;
 
 export const contentSection = css`

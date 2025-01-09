@@ -7,8 +7,6 @@ export const experienceContainer = css`
     
     @media (max-width: 1024px) {
         padding-top: 0;
-        > div:not([id$="-header"]) {
-            padding-top: 2rem;
-        }
+        padding-bottom: 1.5rem;
     }
 `;

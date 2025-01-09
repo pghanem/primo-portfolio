@@ -1,14 +1,16 @@
 import { css } from "@emotion/react";
 
 export const aboutContainer = css`
-    padding-top: 5rem;
+    padding-top: 6rem;
     scroll-margin-top: 60px;
     position: relative;
 
     @media (max-width: 1024px) {
         padding-top: 0;
-        > div:not([id$="-header"]) {
-            padding-top: 2rem;
-        }
+        padding-bottom: 1.5rem;
     }
 `;
+
+export const paragraphContainer = css`
+    margin-bottom: 1.5rem;
+`

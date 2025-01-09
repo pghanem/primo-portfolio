@@ -24,6 +24,6 @@ export const icon = css`
     }
     
     @media (max-width: 1024px) {
-        margin: 3rem 1rem;
+        margin: 1.5rem 1.5rem 5rem 0;
     }
 `;

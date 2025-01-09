@@ -17,8 +17,26 @@ export const globalStyles = css`
         margin: 0;
         padding: 0;
         background-color: #0F172A;
+        position: relative;
     }
-    
+
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+                circle at 0% 0%,
+                rgba(52, 90, 255, 0.20) 0%,
+                rgba(52, 90, 255, 0.1) 30%,
+                rgba(52, 90, 255, 0) 70%
+        );
+        z-index: 9999;
+        pointer-events: none;
+    }
+
     body {
         font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
         -webkit-font-smoothing: antialiased;

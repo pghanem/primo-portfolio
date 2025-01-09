@@ -1,6 +1,7 @@
-import { css, SerializedStyles } from "@emotion/react";
+import { css } from "@emotion/react";
 
 export const heroContainer = css`
+    padding-top: 5rem;
     display: flex;
     max-width: 400px;
 

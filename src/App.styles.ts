@@ -22,13 +22,16 @@ export const cursorGlow = css`
     opacity: 0.25;
 `;
 
-export const container = css`
-    width: 100%;
+export const paddedComponent = css`
     padding: 0 2rem;
 
     @media (max-width: 1024px) {
         padding: 1rem 20px;
     }
+`
+
+export const container = css`
+    width: 100%;
 
     &.enter {
         opacity: 0;
@@ -63,5 +66,23 @@ export const leftPanel = css`
         position: relative;
         top: 0;
         padding-top: 0;
+    }
+`;
+
+export const stickyHeader = css`
+    position: sticky;
+    padding: 10px 20px;
+    color: rgb(226 232 240);
+    top: 0;
+    width: auto;
+    background: rgba(15, 23, 42, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    display: none;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+
+    @media (max-width: 1024px) {
+        display: block;
     }
 `;

@@ -14,6 +14,7 @@ import SplashScreen from "./components/SplashScreen";
 import SocialLinks from "./components/SocialLinks";
 import classNames from "classnames";
 import Navigation from "./components/Navigation";
+import {paddedComponent} from "./App.styles";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -70,20 +71,29 @@ function App() {
                                 }}
                             />}
 
-                            <div css={styles.leftPanel}>
+                            <div css={[styles.leftPanel, styles.paddedComponent]}>
                                 <HeroSection/>
-                                <Navigation />
-                                <SocialLinks />
+                                {!isSmallScreen && <Navigation />}
+                                <SocialLinks/>
                             </div>
 
                             <div>
-                                <section id="about">
+                                <div id="about-header" css={styles.stickyHeader}>
+                                    <div>ABOUT</div>
+                                </div>
+                                <section id="about" css={paddedComponent}>
                                     <AboutSection/>
                                 </section>
-                                <section id="experience">
+                                <div id="experience-header" css={styles.stickyHeader}>
+                                    <div>EXPERIENCE</div>
+                                </div>
+                                <section id="experience" css={paddedComponent}>
                                     <ExperienceSection/>
                                 </section>
-                                <section id="projects">
+                                <div id="projects-header" css={styles.stickyHeader}>
+                                    <div>PROJECTS</div>
+                                </div>
+                                <section id="projects" css={paddedComponent}>
                                     <ProjectsSection/>
                                 </section>
                             </div>

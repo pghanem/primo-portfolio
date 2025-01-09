@@ -10,3 +10,17 @@ export const experienceContainer = css`
         padding-bottom: 1.5rem;
     }
 `;
+
+export const viewResumeButton = css`
+    color: rgb(226 232 240);
+    font-weight: 600;
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+
+    &:hover {
+        transform: scale(1.015);
+        background-color: rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+    }
+`;

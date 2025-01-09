@@ -46,7 +46,6 @@ function App() {
         return () => clearTimeout(timer);
     }, []);
 
-    // TODO: cursorGlow goes down here directly inside innerWrapper.
     return (
         <>
             <SpeedInsights/>
@@ -59,7 +58,6 @@ function App() {
                              "enter-active": isEntered
                          })}>
                         <div css={styles.innerWrapper}>
-
                             <div css={[styles.leftPanel, styles.paddedComponent]}>
                                 <HeroSection/>
                                 {!isSmallScreen && <Navigation />}

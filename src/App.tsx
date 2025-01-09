@@ -6,7 +6,6 @@ import HeroSection from "./sections/HeroSection";
 import ExperienceSection from "./sections/ExperienceSection";
 import AboutSection from "./sections/AboutSection";
 import ProjectsSection from "./sections/ProjectsSection";
-import { useCursorPosition } from "./hooks/useCursorPosition";
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from "@vercel/analytics/react"
 import React, {useEffect, useState} from "react";
@@ -18,7 +17,6 @@ import {paddedComponent} from "./App.styles";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
-    const cursorPosition = useCursorPosition(loading, 0.05);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [isEntered, setIsEntered] = useState(false);
 
@@ -48,6 +46,7 @@ function App() {
         return () => clearTimeout(timer);
     }, []);
 
+    // TODO: cursorGlow goes down here directly inside innerWrapper.
     return (
         <>
             <SpeedInsights/>
@@ -60,13 +59,6 @@ function App() {
                              "enter-active": isEntered
                          })}>
                         <div css={styles.innerWrapper}>
-                            {!loading && !isSmallScreen && <div
-                                css={styles.cursorGlow}
-                                style={{
-                                    left: `${cursorPosition.x}px`,
-                                    top: `${cursorPosition.y}px`
-                                }}
-                            />}
 
                             <div css={[styles.leftPanel, styles.paddedComponent]}>
                                 <HeroSection/>

@@ -60,12 +60,9 @@ function App() {
                              "enter-active": isEntered
                          })}>
                         <div css={styles.innerWrapper}>
-                            {!loading && <div
+                            {!loading && !isSmallScreen && <div
                                 css={styles.cursorGlow}
-                                style={isSmallScreen ? {
-                                    left: "0px",
-                                    top: "0px"
-                                } : {
+                                style={{
                                     left: `${cursorPosition.x}px`,
                                     top: `${cursorPosition.y}px`
                                 }}

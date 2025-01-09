@@ -19,7 +19,7 @@ export const cursorGlow = css`
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    opacity: 0.3;
+    opacity: 0.25;
 `;
 
 export const container = css`

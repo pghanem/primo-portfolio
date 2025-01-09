@@ -17,7 +17,7 @@ import Navigation from "./components/Navigation";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
-    const cursorPosition = useCursorPosition(loading, 0.02);
+    const cursorPosition = useCursorPosition(loading, 0.05);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [isEntered, setIsEntered] = useState(false);
 

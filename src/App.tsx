@@ -14,6 +14,7 @@ import SocialLinks from "./components/SocialLinks";
 import classNames from "classnames";
 import Navigation from "./components/Navigation";
 import {paddedComponent} from "./App.styles";
+import FooterSection from "./sections/FooterSection";
 
 function App() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -82,6 +83,9 @@ function App() {
                                 </div>
                                 <section id="projects" css={paddedComponent}>
                                     <ProjectsSection/>
+                                </section>
+                                <section id="footer" css={paddedComponent}>
+                                    <FooterSection/>
                                 </section>
                             </div>
                         </div>

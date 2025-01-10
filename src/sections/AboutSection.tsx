@@ -4,20 +4,31 @@ import React from "react"
 import * as styles from "./AboutSection.styles";
 
 const AboutSection = (): React.ReactElement => {
+    const handleClick = (url: string) => {
+        window.open(url, "_blank");
+    };
+
     return <div css={styles.aboutContainer}>
-        <div css={{paddingBottom: "1rem"}}>
-            <img src={"/headshot.png"} alt="Headshot" css={styles.headshot}/>
-        </div>
+        <img src={"/headshot.png"} alt="Headshot" css={styles.headshot}/>
 
         <div css={styles.paragraphContainer}>I'm a developer passionate about crafting intuitive, timeless user
             interfaces that combine thoughtful system design with solid engineering. My favorite work is at the
             intersection of architecture and development, where I design robust implementation plans and build
             foundational systems that are efficient, scalable, and maintainable.
         </div>
-        <div css={styles.paragraphContainer}>Currently, I’m a UI Developer at Jostle, where I specialize in core feature
+        <div css={styles.paragraphContainer}>Currently, I’m a UI Developer at {" "}
+            <div
+                onClick={() => handleClick("https://www.jostle.me")}
+                css={styles.clickable}
+            >
+                Jostle
+            </div>, where I specialize in core feature
             rebuilds and stack modernization. I lead the planning, creation, and maintenance of UI components that drive
-            Jostle's frontend. This includes key features like our Search interface and the system-wide Collections
-            interface, a unified approach to managing and displaying list-type data.
+            Jostle's frontend. This includes key features like our recently released {" "}
+            <div
+                onClick={() => handleClick("https://www.jostle.me")}
+                css={styles.clickable}
+            >Search</div> interface. Right now, I'm working on a system-wide Collections UI, a unified approach to managing and displaying list-type data.
         </div>
         <div css={styles.paragraphContainer}>Throughout my career, I’ve had the opportunity to work in diverse
             environments, from startups and large corporations to custom software firms and now a small independent

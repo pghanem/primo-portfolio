@@ -18,14 +18,25 @@ export const paragraphContainer = css`
 export const headshot = css`
     float: right;
     width: 150px;
-    margin: 1.5rem;
+    margin: 0 1.5rem 1.5rem 1.5rem;
     filter: brightness(85%);
     border-radius: 50%;
     border: 5px solid;
 
     @media (max-width: 1024px) {
-        margin: 1rem;
+        margin: 0 1rem 1rem 1rem;
         width: 120px;
         border: 4px solid;
     }
 `
+
+export const clickable = css`
+    font-weight: 600;
+    display: inline;
+    cursor: pointer;
+    color: rgb(226, 232, 240);
+
+    &:hover {
+        color: white;
+    }
+`;

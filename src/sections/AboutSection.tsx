@@ -26,7 +26,7 @@ const AboutSection = (): React.ReactElement => {
             rebuilds and stack modernization. I lead the planning, creation, and maintenance of UI components that drive
             Jostle's frontend. This includes key features like our recently released {" "}
             <div
-                onClick={() => handleClick("https://www.jostle.me")}
+                onClick={() => handleClick("https://forum.jostle.us/hc/en-us/articles/32027726971163-Search-updated-version")}
                 css={styles.clickable}
             >Search</div> interface. Right now, I'm working on a system-wide Collections UI, a unified approach to managing and displaying list-type data.
         </div>

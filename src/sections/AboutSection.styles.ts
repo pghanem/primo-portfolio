@@ -14,3 +14,18 @@ export const aboutContainer = css`
 export const paragraphContainer = css`
     margin-bottom: 1.5rem;
 `
+
+export const headshot = css`
+    float: right;
+    width: 150px;
+    margin: 1.5rem;
+    filter: brightness(85%);
+    border-radius: 50%;
+    border: 5px solid;
+
+    @media (max-width: 1024px) {
+        margin: 1rem;
+        width: 120px;
+        border: 4px solid;
+    }
+`

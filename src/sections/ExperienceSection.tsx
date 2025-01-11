@@ -33,7 +33,7 @@ const ExperienceSection = (): React.ReactElement => {
             endYear="2018"
             jobTitle="Software Developer Co-op"
             companyName="iSpace Lab"
-            companyUrl="https://ispace.iat.sfu.ca/"
+            companyUrl="http://ispace.iat.sfu.ca/"
             description="Developed an immersive VR game, focusing on optimization of checkpoint systems and user interaction design. Created compelling experiences through efficient model management and scripting solutions."
             technologies={["C#", "Unity", "Cinema 4D"]}
         />

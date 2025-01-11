@@ -35,7 +35,7 @@ const AboutSection = (): React.ReactElement => {
             studio. On the side, I’m developing an AI-powered road trip music app that curates playlists based on subtle
             factors such as your location, the weather, and your destination.
         </div>
-        <div css={styles.paragraphContainer}>When I’m not coding, you’ll find me staying active — golfing, reading,
+        <div css={styles.paragraphContainer}>When I’m not coding, you’ll find me staying active, golfing, reading,
             spending time with family and friends, or getting lost in a good PC game.
         </div>
     </div>

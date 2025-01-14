@@ -37,16 +37,12 @@ my web development capabilities.
 
     ```bash
     yarn install
-    # or
-    npm install
     ```
 
 3. Start the development server
 
     ```bash
     yarn dev
-    # or
-    npm dev
     ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view the site in your browser
@@ -58,8 +54,8 @@ primo-portfolio/
 ├── public/
 ├── src/
 │   ├── components/
-│   ├── pages/
-│   ├── styles/
+│   ├── libs/
+│   ├── sections/
 │   └── App.tsx
 └── README.md
 ```
@@ -75,13 +71,16 @@ primo-portfolio/
 ## 🌟 Features
 
 - Responsive design
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+- Splash Screen
+- Summary and Hero section
+- Re-usable Experience and Project Blocks
+- Links to socials
 
-## 📸 Screenshots
+## 📸 Previews
 
-[Add some screenshots of your portfolio site]
+### Mobile
+
+### Web
 
 ## 🤝 Contributing
 

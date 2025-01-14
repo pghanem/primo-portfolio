@@ -16,14 +16,15 @@ my web development capabilities.
 ## 🛠 Technologies Used
 
 - React
-- ...
+- Emotion CSS
+- anime.js
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
 - Node.js (v14 or later)
-- Yarn or npm
+- Yarn
 
 ### Installation
 

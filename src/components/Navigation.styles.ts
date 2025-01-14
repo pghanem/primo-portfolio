@@ -17,7 +17,7 @@ export const navigationContainer = css`
 `;
 
 export const navigationButton = (isSelected: boolean): SerializedStyles => css`
-    color: rgb(226 232 240);
+    color: #e2e8f0;
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 1.5px;
@@ -33,7 +33,7 @@ export const navigationButton = (isSelected: boolean): SerializedStyles => css`
         transform: translateY(-50%);
         width: ${isSelected ? "4rem" : "2rem"};
         height: 1px;
-        background-color: rgb(226 232 240);
+        background-color: #e2e8f0;
         transition: all 0.3s ease;
     }
 

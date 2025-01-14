@@ -9,7 +9,7 @@ export const thumbnailSection = css`
     align-items: center;
     border-radius: 12px;
     border: 3px solid;
-    background-color: rgb(226 232 240);
+    background-color: #e2e8f0;
     filter: brightness(85%);
 `;
 

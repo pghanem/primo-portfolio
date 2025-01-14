@@ -74,7 +74,7 @@ export const leftPanel = css`
 export const stickyHeader = css`
     position: sticky;
     padding: 25px;
-    color: rgb(226 232 240);
+    color: #e2e8f0;
     top: 0;
     width: auto;
     background: rgba(15, 23, 42, 0.5);

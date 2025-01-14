@@ -12,7 +12,7 @@ export const experienceContainer = css`
 `;
 
 export const viewResumeButton = css`
-    color: rgb(226 232 240);
+    color: #e2e8f0;
     font-weight: 600;
     width: fit-content;
     padding: 0.5rem 1rem;

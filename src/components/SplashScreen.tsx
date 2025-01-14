@@ -49,7 +49,7 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
                     <g
                         id="P"
                         transform="translate(36, 33)"
-                        fill="rgb(226 232 240)"
+                        fill="#e2e8f0"
                         style={{ opacity: 0 }}
                         fontSize={50}
                         fontWeight={600}
@@ -62,7 +62,7 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
                         </text>
                     </g>
                     <path
-                        stroke="rgb(226 232 240)"
+                        stroke="#e2e8f0"
                         strokeWidth="5"
                         strokeLinecap="round"
                         strokeLinejoin="round"

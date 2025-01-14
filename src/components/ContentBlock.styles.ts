@@ -33,7 +33,7 @@ export const contentSection = css`
 `;
 
 export const title = css`
-    color: rgb(226 232 240);
+    color: #e2e8f0;
     margin: 0;
     text-decoration: none;
 
@@ -58,5 +58,5 @@ export const techPill = css`
     font-weight: 500;
     padding: 4px 12px;
     border-radius: 16px;
-    border: 1px solid rgb(226 232 240);
+    border: 1px solid #e2e8f0;
 `;

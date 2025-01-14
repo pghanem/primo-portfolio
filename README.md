@@ -78,9 +78,11 @@ primo-portfolio/
 
 ## 📸 Previews
 
-### Mobile
-
 ### Web
+https://github.com/user-attachments/assets/fe9bac68-a377-436d-bd49-7664f9553d2d
+
+### Mobile
+https://github.com/user-attachments/assets/a2a8eb7a-3250-4b76-b922-42ccb0a3cd9f
 
 ## 🤝 Contributing
 

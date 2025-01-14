@@ -10,7 +10,7 @@ my web development capabilities.
 **Peter Ghanem**
 
 - Role: Developer & Designer
-- Personal Website: ...
+- Personal Website: https://peterghanem.com
 - LinkedIn: https://www.linkedin.com/in/peterjghanem/
 
 ## 🛠 Technologies Used
@@ -98,4 +98,5 @@ MIT License
 Peter Ghanem
 
 - Email: peterjghanem@gmail.com
+- Live version: [https://peterghanem.com](https://peterghanem.com)
 - Project Link: [https://github.com/pghanem/primo-portfolio](https://github.com/pghanem/primo-portfolio)

@@ -14,25 +14,23 @@ interface ContentBlockProps {
 }
 
 export const ContentBlock: React.FC<ContentBlockProps> = ({
-                                                        title,
-                                                        description,
-                                                        technologies,
-                                                        url,
-                                                        leftContent,
-                                                        additionalContent
-                                                    }) => {
+    title,
+    description,
+    technologies,
+    url,
+    leftContent,
+    additionalContent,
+}) => {
     return (
-        <div
-            role="button"
-            tabIndex={0}
-            css={styles.container}>
-            <div css={styles.leftSection}>
-                {leftContent}
-            </div>
+        <div role="button" tabIndex={0} css={styles.container}>
+            <div css={styles.leftSection}>{leftContent}</div>
 
             <div css={styles.contentSection}>
-                <div css={styles.title} onClick={url ? () => window.open(url, "_blank", "noopener,noreferrer") : undefined}>
-                    {title} {url && <FontAwesomeIcon icon={faUpRightFromSquare} css={{marginLeft: "5px"}}/>}
+                <div
+                    css={styles.title}
+                    onClick={url ? () => window.open(url, "_blank", "noopener,noreferrer") : undefined}
+                >
+                    {title} {url && <FontAwesomeIcon icon={faUpRightFromSquare} css={{ marginLeft: "5px" }} />}
                 </div>
 
                 {additionalContent}
@@ -41,7 +39,9 @@ export const ContentBlock: React.FC<ContentBlockProps> = ({
 
                 <div css={styles.techPillsContainer}>
                     {technologies.map((tech, index) => (
-                        <div css={styles.techPill} key={index}>{tech}</div>
+                        <div css={styles.techPill} key={index}>
+                            {tech}
+                        </div>
                     ))}
                 </div>
             </div>

@@ -12,19 +12,15 @@ interface ProjectBlockProps {
 }
 
 const ProjectBlock: React.FC<ProjectBlockProps> = ({
-                                                       thumbnail,
-                                                       projectTitle,
-                                                       description,
-                                                       technologies,
-                                                       projectUrl,
-                                                   }) => {
+    thumbnail,
+    projectTitle,
+    description,
+    technologies,
+    projectUrl,
+}) => {
     const thumbnailContent = (
         <div css={styles.thumbnailSection}>
-            <img
-                src={thumbnail}
-                alt={`${projectTitle} thumbnail`}
-                css={styles.thumbnail}
-            />
+            <img src={thumbnail} alt={`${projectTitle} thumbnail`} css={styles.thumbnail} />
         </div>
     );
 

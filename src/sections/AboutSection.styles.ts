@@ -13,7 +13,7 @@ export const aboutContainer = css`
 
 export const paragraphContainer = css`
     margin-bottom: 1.5rem;
-`
+`;
 
 export const headshot = css`
     float: right;
@@ -28,7 +28,7 @@ export const headshot = css`
         width: 120px;
         border: 4px solid;
     }
-`
+`;
 
 export const clickable = css`
     font-weight: 600;

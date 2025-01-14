@@ -1,59 +1,59 @@
 {
-  "name": "primo-portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/babel-preset-css-prop": "^11.12.0",
-    "@emotion/css": "^11.13.5",
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
-    "@fontsource/inter": "^5.1.1",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@tippyjs/react": "^4.2.6",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.2",
-    "@vercel/analytics": "^1.4.1",
-    "@vercel/speed-insights": "^1.1.0",
-    "animejs": "^3.2.2",
-    "classnames": "^2.5.1",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-icons": "^5.4.0",
-    "react-scripts": "^5.0.1",
-    "typescript": "^5.7.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/animejs": "^3.1.12"
-  }
+    "name": "primo-portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/babel-preset-css-prop": "^11.12.0",
+        "@emotion/css": "^11.13.5",
+        "@emotion/react": "^11.14.0",
+        "@emotion/styled": "^11.14.0",
+        "@fontsource/inter": "^5.1.1",
+        "@fortawesome/fontawesome-svg-core": "^6.7.2",
+        "@fortawesome/free-brands-svg-icons": "^6.7.2",
+        "@fortawesome/free-solid-svg-icons": "^6.7.2",
+        "@fortawesome/react-fontawesome": "^0.2.2",
+        "@testing-library/jest-dom": "^5.14.1",
+        "@testing-library/react": "^13.0.0",
+        "@testing-library/user-event": "^13.2.1",
+        "@tippyjs/react": "^4.2.6",
+        "@types/react": "^19.0.1",
+        "@types/react-dom": "^19.0.2",
+        "@vercel/analytics": "^1.4.1",
+        "@vercel/speed-insights": "^1.1.0",
+        "animejs": "^3.2.2",
+        "classnames": "^2.5.1",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-icons": "^5.4.0",
+        "react-scripts": "^5.0.1",
+        "typescript": "^5.7.2",
+        "web-vitals": "^2.1.0"
+    },
+    "scripts": {
+        "dev": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/animejs": "^3.1.12"
+    }
 }

@@ -36,7 +36,7 @@ export const title = css`
     color: rgb(226 232 240);
     margin: 0;
     text-decoration: none;
-  
+
     &:hover {
         cursor: pointer;
     }

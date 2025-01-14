@@ -19,7 +19,6 @@ export const thumbnail = css`
     object-fit: cover;
 `;
 
-
 export const description = css`
     font-size: 0.9rem;
     line-height: 1.6;

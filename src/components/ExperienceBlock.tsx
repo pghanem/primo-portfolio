@@ -15,26 +15,22 @@ interface ExperienceBlockProps {
 }
 
 export const ExperienceBlock: React.FC<ExperienceBlockProps> = ({
-                                                                    startYear,
-                                                                    endYear,
-                                                                    jobTitle,
-                                                                    prevTitle,
-                                                                    companyName,
-                                                                    companyUrl,
-                                                                    description,
-                                                                    technologies
-                                                                }) => {
+    startYear,
+    endYear,
+    jobTitle,
+    prevTitle,
+    companyName,
+    companyUrl,
+    description,
+    technologies,
+}) => {
     const yearContent = (
         <div css={styles.yearSection}>
             {startYear} - {endYear}
         </div>
     );
 
-    const prevTitleContent = prevTitle && (
-        <div css={styles.prevTitle}>
-            {prevTitle}
-        </div>
-    );
+    const prevTitleContent = prevTitle && <div css={styles.prevTitle}>{prevTitle}</div>;
 
     return (
         <ContentBlock

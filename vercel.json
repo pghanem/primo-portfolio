@@ -1,15 +1,15 @@
 {
-  "redirects": [
-    {
-      "source": "/",
-      "has": [
+    "redirects": [
         {
-          "type": "host",
-          "value": "www.peterghanem.com"
+            "source": "/",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.peterghanem.com"
+                }
+            ],
+            "destination": "https://peterghanem.com",
+            "permanent": true
         }
-      ],
-      "destination": "https://peterghanem.com",
-      "permanent": true
-    }
-  ]
+    ]
 }

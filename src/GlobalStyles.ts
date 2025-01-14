@@ -10,38 +10,52 @@ export const globalStyles = css`
         box-sizing: border-box;
     }
 
-    html, body {
+    html,
+    body {
         width: 100%;
         max-width: 100vw;
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #0F172A;
+        background-color: #0f172a;
         position: relative;
     }
 
     body::before {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         background: radial-gradient(
-                circle at 0% 0%,
-                rgba(52, 90, 255, 0.20) 0%,
-                rgba(52, 90, 255, 0.1) 30%,
-                rgba(52, 90, 255, 0) 70%
+            circle at 0% 0%,
+            rgba(52, 90, 255, 0.2) 0%,
+            rgba(52, 90, 255, 0.1) 30%,
+            rgba(52, 90, 255, 0) 70%
         );
         z-index: 9999;
         pointer-events: none;
     }
 
     body {
-        font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+        font-family:
+            "Inter",
+            -apple-system,
+            BlinkMacSystemFont,
+            "Segoe UI",
+            "Roboto",
+            "Oxygen",
+            "Ubuntu",
+            "Cantarell",
+            "Fira Sans",
+            "Droid Sans",
+            "Helvetica Neue",
+            Arial,
+            sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #A0ADBE;
+        color: #a0adbe;
         line-height: 1.6;
         font-weight: 400;
         text-rendering: optimizeLegibility;

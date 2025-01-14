@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, {useEffect, useRef} from "react";
+import React, { useEffect, useRef } from "react";
 import anime from "animejs";
 import * as styles from "./SplashScreen.styles";
 
@@ -17,23 +17,21 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
                     anim.pause();
                     onAnimationComplete();
                 }
-            }
+            },
         });
 
-        anim
-            .add({
-                targets: "#hexagon path",
-                strokeDashoffset: [anime.setDashoffset, 0],
-                easing: "easeInOutQuint",
-                duration: 1200,
-                delay: (_el: any, i: number) => i * 100,
-            })
-            .add({
-                targets: "#hexagon #P",
-                duration: 1200,
-                opacity: 1,
-                easing: "easeInOutQuad"
-            });
+        anim.add({
+            targets: "#hexagon path",
+            strokeDashoffset: [anime.setDashoffset, 0],
+            easing: "easeInOutQuint",
+            duration: 1200,
+            delay: (_el: any, i: number) => i * 100,
+        }).add({
+            targets: "#hexagon #P",
+            duration: 1200,
+            opacity: 1,
+            easing: "easeInOutQuad",
+        });
 
         return () => anim.pause();
     }, [onAnimationComplete]);
@@ -52,13 +50,15 @@ const SplashScreen = ({ onAnimationComplete }: { onAnimationComplete: () => void
                         id="P"
                         transform="translate(36, 33)"
                         fill="rgb(226 232 240)"
-                        style={{opacity: 0}}
+                        style={{ opacity: 0 }}
                         fontSize={50}
                         fontWeight={600}
                         letterSpacing="4"
                     >
                         <text>
-                            <tspan x="-0.5" y="35">P</tspan>
+                            <tspan x="-0.5" y="35">
+                                P
+                            </tspan>
                         </text>
                     </g>
                     <path

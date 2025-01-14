@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import * as styles from "./Navigation.styles";
 
 const Navigation = (): React.ReactElement => {
@@ -12,7 +12,7 @@ const Navigation = (): React.ReactElement => {
             let maxVisibility = 0;
             let mostVisibleSection = "";
 
-            sections.forEach(section => {
+            sections.forEach((section) => {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
@@ -46,22 +46,25 @@ const Navigation = (): React.ReactElement => {
             <nav css={styles.navigationContainer}>
                 <div
                     css={styles.navigationButton(activeSection === "about")}
-                    onClick={() => document.getElementById("about")?.scrollIntoView()}>
+                    onClick={() => document.getElementById("about")?.scrollIntoView()}
+                >
                     ABOUT
                 </div>
                 <div
                     css={styles.navigationButton(activeSection === "experience")}
-                    onClick={() => document.getElementById("experience")?.scrollIntoView()}>
+                    onClick={() => document.getElementById("experience")?.scrollIntoView()}
+                >
                     EXPERIENCE
                 </div>
                 <div
                     css={styles.navigationButton(activeSection === "projects")}
-                    onClick={() => document.getElementById("projects")?.scrollIntoView()}>
+                    onClick={() => document.getElementById("projects")?.scrollIntoView()}
+                >
                     PROJECTS
                 </div>
             </nav>
         </div>
     );
-}
+};
 
 export default Navigation;

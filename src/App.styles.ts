@@ -5,15 +5,15 @@ export const cursorGlow = css`
     width: 1100px;
     height: 1100px;
     background: radial-gradient(
-            circle,
-            rgba(52, 90, 255, 0.50) 0%,
-            rgba(52, 85, 225, 0.40) 15%,
-            rgba(52, 80, 225, 0.30) 30%,
-            rgba(52, 75, 225, 0.20) 40%,
-            rgba(52, 69, 225, 0.15) 50%,
-            rgba(52, 75, 225, 0.10) 55%,
-            rgba(52, 69, 225, 0.05) 60%,
-            rgba(52, 69, 225, 0.0) 65%
+        circle,
+        rgba(52, 90, 255, 0.5) 0%,
+        rgba(52, 85, 225, 0.4) 15%,
+        rgba(52, 80, 225, 0.3) 30%,
+        rgba(52, 75, 225, 0.2) 40%,
+        rgba(52, 69, 225, 0.15) 50%,
+        rgba(52, 75, 225, 0.1) 55%,
+        rgba(52, 69, 225, 0.05) 60%,
+        rgba(52, 69, 225, 0) 65%
     );
     z-index: 9999;
     border-radius: 50%;
@@ -28,7 +28,7 @@ export const paddedComponent = css`
     @media (max-width: 1024px) {
         padding: 0 25px;
     }
-`
+`;
 
 export const container = css`
     width: 100%;
@@ -41,7 +41,9 @@ export const container = css`
     &.enter-active {
         opacity: 1;
         transform: scale(1);
-        transition: opacity 250ms, transform 250ms;
+        transition:
+            opacity 250ms,
+            transform 250ms;
     }
 `;
 

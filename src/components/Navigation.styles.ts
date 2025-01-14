@@ -23,15 +23,15 @@ export const navigationButton = (isSelected: boolean): SerializedStyles => css`
     letter-spacing: 1.5px;
     font-size: 0.75rem;
     position: relative;
-    padding-left: ${isSelected ? '5rem' : '3rem'};
+    padding-left: ${isSelected ? "5rem" : "3rem"};
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
         top: 50%;
         transform: translateY(-50%);
-        width: ${isSelected ? '4rem' : '2rem'};
+        width: ${isSelected ? "4rem" : "2rem"};
         height: 1px;
         background-color: rgb(226 232 240);
         transition: all 0.3s ease;

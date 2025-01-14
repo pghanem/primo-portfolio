@@ -7,7 +7,7 @@ export const footerContainer = css`
     scroll-margin-top: 60px;
     position: relative;
     padding-bottom: 6rem;
-    color: #8A8F9E;
+    color: #8a8f9e;
 
     @media (max-width: 1024px) {
         padding-top: 0;
@@ -16,7 +16,7 @@ export const footerContainer = css`
 
 export const clickable = css`
     font-weight: 600;
-    color: #A0ADBE;
+    color: #a0adbe;
     display: inline;
     cursor: pointer;
 

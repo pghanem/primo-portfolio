@@ -14,6 +14,7 @@ const ProjectsSection = (): React.ReactElement => {
                 projectTitle={"Roadio"}
                 technologies={["React Native", "Spotify API"]}
                 thumbnail={"/roadioThumbnail.png"}
+                projectUrl={"https://github.com/pghanem/roadio"}
             />
             <ProjectBlock
                 description={"An open-source portfolio site built with React and Emotion CSS."}

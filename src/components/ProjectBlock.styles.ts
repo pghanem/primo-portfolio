@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const thumbnailSection = css`
     width: 125px;
@@ -9,7 +10,7 @@ export const thumbnailSection = css`
     align-items: center;
     border-radius: 12px;
     border: 3px solid;
-    background-color: #e2e8f0;
+    background-color: ${Colors.BLUE100};
     filter: brightness(85%);
 `;
 

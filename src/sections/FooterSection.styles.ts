@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const footerContainer = css`
     font-size: 0.85rem;
@@ -7,7 +8,7 @@ export const footerContainer = css`
     scroll-margin-top: 60px;
     position: relative;
     padding-bottom: 6rem;
-    color: #8a8f9e;
+    color: ${Colors.GREY100};
 
     @media (max-width: 1024px) {
         padding-top: 0;
@@ -16,7 +17,7 @@ export const footerContainer = css`
 
 export const clickable = css`
     font-weight: 600;
-    color: #a0adbe;
+    color: ${Colors.BLUE200};
     display: inline;
     cursor: pointer;
 

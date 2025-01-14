@@ -1,17 +1,18 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const linksContainer = css`
     display: flex;
 `;
 
 export const grabEmailTooltip = css`
-    background-color: #1e3a8a;
-    color: #ffffff;
+    background-color: ${Colors.BLUE400};
+    color: ${Colors.WHITE};
 `;
 
 export const emailCopiedTooltip = css`
-    background-color: #2563eb;
-    color: #ffffff;
+    background-color: ${Colors.BLUE300};
+    color: ${Colors.WHITE};
 `;
 
 export const icon = css`

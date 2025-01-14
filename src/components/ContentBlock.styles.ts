@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const container = css`
     border-radius: 8px;
@@ -33,7 +34,7 @@ export const contentSection = css`
 `;
 
 export const title = css`
-    color: #e2e8f0;
+    color: ${Colors.BLUE100};
     margin: 0;
     text-decoration: none;
 
@@ -58,5 +59,5 @@ export const techPill = css`
     font-weight: 500;
     padding: 4px 12px;
     border-radius: 16px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid ${Colors.BLUE100};
 `;

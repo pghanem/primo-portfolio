@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const experienceContainer = css`
     padding-top: 5rem;
@@ -12,7 +13,7 @@ export const experienceContainer = css`
 `;
 
 export const viewResumeButton = css`
-    color: #e2e8f0;
+    color: ${Colors.BLUE100};
     font-weight: 600;
     width: fit-content;
     padding: 0.5rem 1rem;

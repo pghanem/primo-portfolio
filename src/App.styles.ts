@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "./libs/Colors";
 
 export const cursorGlow = css`
     position: fixed;
@@ -74,7 +75,7 @@ export const leftPanel = css`
 export const stickyHeader = css`
     position: sticky;
     padding: 25px;
-    color: #e2e8f0;
+    color: ${Colors.BLUE100};
     top: 0;
     width: auto;
     background: rgba(15, 23, 42, 0.5);

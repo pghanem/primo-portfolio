@@ -1,4 +1,5 @@
 import { css, SerializedStyles } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const selectiveShow = css`
     display: flex;
@@ -17,7 +18,7 @@ export const navigationContainer = css`
 `;
 
 export const navigationButton = (isSelected: boolean): SerializedStyles => css`
-    color: #e2e8f0;
+    color: ${Colors.BLUE100};
     cursor: pointer;
     transition: all 0.3s ease;
     letter-spacing: 1.5px;
@@ -33,7 +34,7 @@ export const navigationButton = (isSelected: boolean): SerializedStyles => css`
         transform: translateY(-50%);
         width: ${isSelected ? "4rem" : "2rem"};
         height: 1px;
-        background-color: #e2e8f0;
+        background-color: ${Colors.BLUE100};
         transition: all 0.3s ease;
     }
 

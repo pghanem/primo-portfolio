@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "./libs/Colors";
 
 export const globalStyles = css`
     @font-face {
@@ -17,7 +18,7 @@ export const globalStyles = css`
         height: 100%;
         margin: 0;
         padding: 0;
-        background-color: #0f172a;
+        background-color: ${Colors.BLUE500};
         position: relative;
     }
 
@@ -55,7 +56,7 @@ export const globalStyles = css`
             sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: #a0adbe;
+        color: ${Colors.BLUE200};
         line-height: 1.6;
         font-weight: 400;
         text-rendering: optimizeLegibility;

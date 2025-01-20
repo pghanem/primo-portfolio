@@ -22,6 +22,6 @@ export const clickable = css`
     cursor: pointer;
 
     &:hover {
-        color: rgb(226, 232, 240);
+        color: ${Colors.BLUE100};
     }
 `;

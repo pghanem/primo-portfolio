@@ -1,4 +1,5 @@
 import { css } from "@emotion/react";
+import Colors from "../libs/Colors";
 
 export const aboutContainer = css`
     padding-top: 6rem;
@@ -34,7 +35,7 @@ export const clickable = css`
     font-weight: 600;
     display: inline;
     cursor: pointer;
-    color: rgb(226, 232, 240);
+    color: ${Colors.BLUE100};
 
     &:hover {
         color: white;

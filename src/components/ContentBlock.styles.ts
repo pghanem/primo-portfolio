@@ -15,6 +15,7 @@ export const container = css`
         &:hover {
             transform: scale(1.015);
             background-color: rgba(255, 255, 255, 0.05);
+            color: ${Colors.BLUE100};
         }
     }
 
@@ -40,6 +41,7 @@ export const title = css`
 
     &:hover {
         cursor: pointer;
+        color: white;
     }
 `;
 

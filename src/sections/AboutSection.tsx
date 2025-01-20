@@ -31,12 +31,12 @@ const AboutSection = (): React.ReactElement => {
                 >
                     Search
                 </div>{" "}
-                interface. Right now, I'm working on a system-wide Collections UI, a unified approach to managing and
-                displaying list-type data.
+                interface.
             </div>
             <div css={styles.paragraphContainer}>
-                I’ve honed my skills across startups, large corporations, and independent studios, making me adaptable to any environment. On the side, I’m developing an
-                AI-powered road trip music app that curates playlists based on subtle factors such as your location, the
+                Right now, I'm working on a system-wide Collections UI, a unified approach to managing and
+                displaying list-type data. On the side, I’m developing an
+                AI-powered road trip app that curates music playlists based on subtle factors such as your location, the
                 weather, and your destination.
             </div>
             <div css={styles.paragraphContainer}>

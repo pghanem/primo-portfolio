@@ -13,18 +13,15 @@ const AboutSection = (): React.ReactElement => {
             <img src={"/headshot.png"} alt="Headshot" css={styles.headshot} />
 
             <div css={styles.paragraphContainer}>
-                I'm a developer passionate about crafting intuitive, timeless user interfaces that combine thoughtful
-                system design with solid engineering. My favorite work is at the intersection of architecture and
-                development, where I design robust implementation plans and build foundational systems that are
-                efficient, scalable, and maintainable.
+                I'm a developer passionate about crafting timeless user interfaces through thoughtful system design and solid engineering. I thrive at the intersection of architecture and development, where I create robust implementation plans and build foundational systems that are efficient, scalable, and maintainable.
             </div>
             <div css={styles.paragraphContainer}>
                 Currently, I’m a UI Developer at{" "}
                 <div onClick={() => handleClick("https://www.jostle.me")} css={styles.clickable}>
                     Jostle
                 </div>
-                , where I specialize in core feature rebuilds and stack modernization. I lead the planning, creation,
-                and maintenance of UI components that drive Jostle's frontend. This includes key features like our
+                , specializing in core feature rebuilds and stack modernization. I lead the planning, creation,
+                and maintenance of UI components that drive Jostle's frontend. Highlights includes key features like our
                 recently released{" "}
                 <div
                     onClick={() =>
@@ -38,8 +35,7 @@ const AboutSection = (): React.ReactElement => {
                 displaying list-type data.
             </div>
             <div css={styles.paragraphContainer}>
-                Throughout my career, I’ve had the opportunity to work in diverse environments, from startups and large
-                corporations to custom software firms and now a small independent studio. On the side, I’m developing an
+                I’ve honed my skills across startups, large corporations, and independent studios, making me adaptable to any environment. On the side, I’m developing an
                 AI-powered road trip music app that curates playlists based on subtle factors such as your location, the
                 weather, and your destination.
             </div>

@@ -18,10 +18,11 @@ export const viewResumeButton = css`
     width: fit-content;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
 
     &:hover {
         transform: scale(1.015);
-        background-color: rgba(255, 255, 255, 0.05);
+        background-color: rgba(255, 255, 255, 0.2);
         cursor: pointer;
     }
 `;

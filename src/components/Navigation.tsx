@@ -1,5 +1,5 @@
 /** @jsxImportSource @emotion/react */
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import * as styles from "./Navigation.styles";
 
 const Navigation = (): React.ReactElement => {
@@ -62,6 +62,7 @@ const Navigation = (): React.ReactElement => {
                 >
                     PROJECTS
                 </div>
+                <div/>
             </nav>
         </div>
     );

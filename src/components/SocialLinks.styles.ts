@@ -8,11 +8,19 @@ export const linksContainer = css`
 export const grabEmailTooltip = css`
     background-color: ${Colors.BLUE400};
     color: ${Colors.WHITE};
+
+    .tippy-arrow {
+        color: ${Colors.BLUE400};
+    }
 `;
 
 export const emailCopiedTooltip = css`
     background-color: ${Colors.BLUE300};
     color: ${Colors.WHITE};
+
+    .tippy-arrow {
+        color: ${Colors.BLUE300};
+    }
 `;
 
 export const icon = css`

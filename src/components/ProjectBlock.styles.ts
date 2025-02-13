@@ -12,6 +12,7 @@ export const thumbnailSection = css`
     border: 3px solid;
     background-color: ${Colors.BLUE100};
     filter: brightness(85%);
+    cursor: pointer;
 `;
 
 export const thumbnail = css`

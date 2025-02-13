@@ -10,6 +10,7 @@ interface ContentBlockProps {
     technologies: string[];
     url?: string;
     leftContent: React.ReactNode;
+    clickableLeft?: boolean;
     additionalContent?: React.ReactNode;
 }
 
@@ -19,11 +20,14 @@ export const ContentBlock: React.FC<ContentBlockProps> = ({
     technologies,
     url,
     leftContent,
+    clickableLeft = false,
     additionalContent,
 }) => {
     return (
         <div role="button" tabIndex={0} css={styles.container}>
-            <div css={styles.leftSection}>{leftContent}</div>
+            <div
+                 onClick={url && clickableLeft ? () => window.open(url, "_blank", "noopener,noreferrer") : undefined}
+            >{leftContent}</div>
 
             <div css={styles.contentSection}>
                 <div

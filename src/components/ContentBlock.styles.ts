@@ -26,8 +26,6 @@ export const container = css`
     }
 `;
 
-export const leftSection = css``;
-
 export const contentSection = css`
     display: flex;
     flex-direction: column;

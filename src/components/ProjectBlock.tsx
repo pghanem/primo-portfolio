@@ -31,6 +31,7 @@ const ProjectBlock: React.FC<ProjectBlockProps> = ({
             technologies={technologies}
             url={projectUrl}
             leftContent={thumbnailContent}
+            clickableLeft
         />
     );
 };

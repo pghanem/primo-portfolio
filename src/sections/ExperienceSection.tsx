@@ -22,7 +22,7 @@ const ExperienceSection = (): React.ReactElement => {
             <ExperienceBlock
                 startYear="2019"
                 endYear="2021"
-                jobTitle="Technical Architect"
+                jobTitle="Software Architect"
                 prevTitle="Software Developer"
                 companyName="Ensemble"
                 companyUrl="https://www.ensemble.com/"

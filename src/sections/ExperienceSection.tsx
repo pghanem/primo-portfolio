@@ -12,8 +12,8 @@ const ExperienceSection = (): React.ReactElement => {
             <ExperienceBlock
                 startYear="2021"
                 endYear="Present"
-                jobTitle="Team Lead Software Developer"
-                prevTitle="Intermediate Software Developer"
+                jobTitle="Software Developer III (Team Lead)"
+                prevTitle="Software Developer II"
                 companyName="Jostle"
                 companyUrl="https://www.jostle.me"
                 description="Leading and mentoring a development team while driving key technical initiatives. I architected Collections, a unified platform approach to displaying list-type data, and led the UI team's complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface."

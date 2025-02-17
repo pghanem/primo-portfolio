@@ -2,8 +2,7 @@
 
 ## Overview
 
-A personal portfolio website showcasing my projects, skills, and professional journey, built with React to demonstrate
-my web development capabilities.
+A personal portfolio website showcasing my projects, skills, and professional journey, built with React and deployed with Vercel.
 
 ## 👤 About the Developer
 

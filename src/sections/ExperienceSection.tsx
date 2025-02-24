@@ -26,7 +26,7 @@ const ExperienceSection = (): React.ReactElement => {
                 prevTitle="Software Developer"
                 companyName="Ensemble"
                 companyUrl="https://www.ensemble.com/"
-                description="Served as Technical Architect designing scalable Adobe CMS solutions and building full-stack media applications. Created automated workflows for Adobe InDesign to HTML conversion and delivered Netflix-style user experiences for Roku TV."
+                description="Served as Software Architect, designing scalable Adobe CMS solutions and building full-stack media applications. Created automated workflows for Adobe InDesign to HTML conversion and delivered Netflix-style user experiences for Roku TV."
                 technologies={["Java", "Node.js", "React", "React Native"]}
             />
             <ExperienceBlock
@@ -41,7 +41,8 @@ const ExperienceSection = (): React.ReactElement => {
             <ExperienceBlock
                 startYear="2014"
                 endYear="2016"
-                jobTitle="Software Engineer in Test"
+                jobTitle="QA Lead"
+                prevTitle="Software QA Analyst"
                 companyName="Finger Food Studios (Acquired by Unity, May 2020)"
                 companyUrl="https://unity.com/"
                 description="Led test automation initiatives across web, mobile, Xbox, and Microsoft HoloLens platforms. Implemented comprehensive QA processes that strengthened product reliability and user experience."

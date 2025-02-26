@@ -32,7 +32,7 @@ const ExperienceSection = (): React.ReactElement => {
             <ExperienceBlock
                 startYear="2017"
                 endYear="2018"
-                jobTitle="Software Developer Co-op"
+                jobTitle="Software Developer Intern"
                 companyName="iSpace Lab"
                 companyUrl="http://ispace.iat.sfu.ca/"
                 description="Developed an immersive VR game, focusing on optimization of checkpoint systems and user interaction design. Created compelling experiences through efficient model management and scripting solutions."

@@ -35,7 +35,7 @@ const ExperienceSection = (): React.ReactElement => {
                 jobTitle="Software Developer Intern"
                 companyName="iSpace Lab"
                 companyUrl="http://ispace.iat.sfu.ca/"
-                description="Developed an immersive VR game, focusing on optimization of checkpoint systems and user interaction design. Created compelling experiences through efficient model management and scripting solutions."
+                description="Built an immersive Unity virtual reality game, optimizing checkpoints, models, and scripts to create awe‑inducing experiences for academic research."
                 technologies={["C#", "Unity", "Cinema 4D"]}
             />
             <ExperienceBlock

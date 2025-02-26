@@ -27,7 +27,7 @@ const ProjectsSection = (): React.ReactElement => {
                 description={
                     "Developed an app to engage users in supporting BC Parks through volunteering, donating, issue reporting, and leaderboard competition."
                 }
-                projectTitle={"natureQuest (2nd Place Winner @ VanHacks)"}
+                projectTitle={"natureQuest (2nd Place 🏆 @ VanHacks)"}
                 technologies={["React Native", "Node.js", "SQLite"]}
                 thumbnail={"/natureQuestThumbnail.jpg"}
                 projectUrl={"https://github.com/ivantang/bcparks"}

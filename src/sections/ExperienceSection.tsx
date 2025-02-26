@@ -43,7 +43,7 @@ const ExperienceSection = (): React.ReactElement => {
                 endYear="2016"
                 jobTitle="QA Lead"
                 prevTitle="Software QA Analyst"
-                companyName="Finger Food Studios (Acquired by Unity, May 2020)"
+                companyName="Finger Food Studios (now Unity)"
                 companyUrl="https://unity.com/"
                 description="Led test automation initiatives across web, mobile, Xbox, and Microsoft HoloLens platforms. Implemented comprehensive QA processes that strengthened product reliability and user experience."
                 technologies={["Selenium WebDriver", "Python"]}

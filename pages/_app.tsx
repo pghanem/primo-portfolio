@@ -2,7 +2,9 @@ import Head from "next/head";
 import { Global } from "@emotion/react";
 import { globalStyles } from "../src/GlobalStyles";
 import { AppProps } from "next/app";
-import "@fontsource/inter";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     return (
@@ -18,7 +20,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 />
             </Head>
             <Global styles={globalStyles} />
-            <Component {...pageProps} />
+            <main className={inter.className}>
+                <Component {...pageProps} />
+            </main>
         </>
     );
 }

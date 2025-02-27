@@ -2,11 +2,6 @@ import { css } from "@emotion/react";
 import Colors from "./libs/Colors";
 
 export const globalStyles = css`
-    @font-face {
-        font-family: "Inter";
-        font-display: swap;
-    }
-
     * {
         box-sizing: border-box;
     }
@@ -30,30 +25,16 @@ export const globalStyles = css`
         width: 100%;
         height: 100%;
         background: radial-gradient(
-            circle at 0% 0%,
-            rgba(52, 90, 255, 0.2) 0%,
-            rgba(52, 90, 255, 0.1) 30%,
-            rgba(52, 90, 255, 0) 70%
+                circle at 0% 0%,
+                rgba(52, 90, 255, 0.2) 0%,
+                rgba(52, 90, 255, 0.1) 30%,
+                rgba(52, 90, 255, 0) 70%
         );
         z-index: 9999;
         pointer-events: none;
     }
 
     body {
-        font-family:
-            "Inter",
-            -apple-system,
-            BlinkMacSystemFont,
-            "Segoe UI",
-            "Roboto",
-            "Oxygen",
-            "Ubuntu",
-            "Cantarell",
-            "Fira Sans",
-            "Droid Sans",
-            "Helvetica Neue",
-            Arial,
-            sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: ${Colors.BLUE200};

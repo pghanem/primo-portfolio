@@ -1,6 +1,6 @@
 /** @jsxImportSource @emotion/react */
-import * as styles from "./index.styles";
-import { paddedComponent } from "./index.styles";
+import * as styles from "../src/styles/index.styles";
+import { paddedComponent } from "../src/styles/index.styles";
 import { Global } from "@emotion/react";
 import { globalStyles } from "../src/GlobalStyles";
 import HeroSection from "../src/sections/HeroSection";

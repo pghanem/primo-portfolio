@@ -32,7 +32,7 @@ export const headshot = css`
 `;
 
 export const clickable = css`
-    font-weight: 600;
+    font-weight: 500;
     display: inline;
     cursor: pointer;
     color: ${Colors.BLUE100};

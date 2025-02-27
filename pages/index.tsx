@@ -15,6 +15,7 @@ import SocialLinks from "../src/components/SocialLinks";
 import classNames from "classnames";
 import Navigation from "../src/components/Navigation";
 import FooterSection from "../src/sections/FooterSection";
+import Head from "next/head";
 
 export default function Home() {
     const [loading, setLoading] = useState<boolean>(true);
@@ -48,6 +49,20 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>Peter Ghanem - Software Developer</title>
+                <meta
+                    name="description"
+                    content="Peter is a software developer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                />
+                <meta property="og:title" content="Peter Ghanem - Software Developer" />
+                <meta
+                    property="og:description"
+                    content="Peter is a software developer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                />
+                <meta property="og:image" content="/apple-touch-icon.png" />
+                <meta property="og:url" content="https://peterghanem.com/" />
+            </Head>
             <SpeedInsights />
             <Analytics />
             <Global styles={globalStyles} />

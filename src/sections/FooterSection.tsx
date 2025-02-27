@@ -15,6 +15,9 @@ const FooterSection = (): React.ReactElement => {
                 IntelliJ IDEA
             </div>{" "}
             by yours truly. Built with{" "}
+            <div onClick={() => handleClick("https://nextjs.org/")} css={styles.clickable}>
+                Next.js,
+            </div>{" "}
             <div onClick={() => handleClick("https://react.dev/")} css={styles.clickable}>
                 React
             </div>{" "}

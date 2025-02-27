@@ -1,8 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import * as styles from "../src/styles/index.styles";
 import { paddedComponent } from "../src/styles/index.styles";
-import { Global } from "@emotion/react";
-import { globalStyles } from "../src/GlobalStyles";
 import HeroSection from "../src/sections/HeroSection";
 import ExperienceSection from "../src/sections/ExperienceSection";
 import AboutSection from "../src/sections/AboutSection";
@@ -47,6 +45,8 @@ export default function Home() {
         return () => clearTimeout(timer);
     }, []);
 
+    // TODO: implement SSG now that Next.js migration is done
+
     return (
         <>
             <Head>
@@ -65,7 +65,6 @@ export default function Home() {
             </Head>
             <SpeedInsights />
             <Analytics />
-            <Global styles={globalStyles} />
             {loading ? (
                 <SplashScreen onAnimationComplete={() => setLoading(false)} />
             ) : (

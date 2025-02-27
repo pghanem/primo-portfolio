@@ -61,6 +61,8 @@ primo-portfolio/
 │   ├── components/      
 │   ├── libs/            
 │   ├── sections/        
+│   ├── styles/            
+│   ├── tests/  
 └── README.md       
 ```
 

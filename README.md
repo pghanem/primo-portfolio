@@ -2,7 +2,7 @@
 
 ## Overview
 
-A personal portfolio website showcasing my professional journey, experience, and projects. Built with React and deployed with Vercel.
+A personal portfolio website showcasing my professional journey, experience, and projects. Now built with **Next.js** for improved performance and deployed with **Vercel**.
 
 ## 👤 About the Developer
 
@@ -15,6 +15,8 @@ A personal portfolio website showcasing my professional journey, experience, and
 ## 🛠 Technologies Used
 
 - React
+- Next.js
+- Vercel
 - Emotion CSS
 - anime.js
 
@@ -51,22 +53,24 @@ A personal portfolio website showcasing my professional journey, experience, and
 
 ```
 primo-portfolio/
-├── public/
-├── src/
-│   ├── components/
-│   ├── libs/
-│   ├── sections/
-│   └── App.tsx
-└── README.md
+├── public/          
+├── pages/           
+│   ├── _app.tsx     
+│   ├── index.tsx    
+├── src/           
+│   ├── components/      
+│   ├── libs/            
+│   ├── sections/        
+└── README.md       
 ```
 
 ## 🔧 Available Scripts
 
-| Command      | Description                      |
-| ------------ | -------------------------------- |
-| `yarn dev`   | Runs the app in development mode |
-| `yarn build` | Builds the app for production    |
-| `yarn test`  | Runs the test suite              |
+| Command      | Description                          |
+|-------------|----------------------------------|
+| `yarn dev`  | Runs the app in development mode  |
+| `yarn build`| Builds the app for production     |
+| `yarn start`| Starts the production server     |
 
 ## 🌟 Features
 

@@ -1,0 +1,99 @@
+/** @jsxImportSource @emotion/react */
+import * as styles from "./index.styles";
+import { paddedComponent } from "./index.styles";
+import { Global } from "@emotion/react";
+import { globalStyles } from "../src/GlobalStyles";
+import HeroSection from "../src/sections/HeroSection";
+import ExperienceSection from "../src/sections/ExperienceSection";
+import AboutSection from "../src/sections/AboutSection";
+import ProjectsSection from "../src/sections/ProjectsSection";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
+import React, { useEffect, useState } from "react";
+import SplashScreen from "../src/components/SplashScreen";
+import SocialLinks from "../src/components/SocialLinks";
+import classNames from "classnames";
+import Navigation from "../src/components/Navigation";
+import FooterSection from "../src/sections/FooterSection";
+
+export default function Home() {
+    const [loading, setLoading] = useState<boolean>(true);
+    const [isSmallScreen, setIsSmallScreen] = useState(false);
+    const [isEntered, setIsEntered] = useState(false);
+
+    useEffect(() => {
+        if (!loading) {
+            requestAnimationFrame(() => {
+                setIsEntered(true);
+            });
+        }
+    }, [loading]);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth < 1024);
+        };
+        handleResize();
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLoading(false);
+        }, 50000);
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    return (
+        <>
+            <SpeedInsights />
+            <Analytics />
+            <Global styles={globalStyles} />
+            {loading ? (
+                <SplashScreen onAnimationComplete={() => setLoading(false)} />
+            ) : (
+                <div
+                    css={styles.container}
+                    className={classNames({
+                        enter: !isEntered,
+                        "enter-active": isEntered,
+                    })}
+                >
+                    <div css={styles.innerWrapper}>
+                        <div css={[styles.leftPanel, styles.paddedComponent]}>
+                            <HeroSection />
+                            {!isSmallScreen && <Navigation />}
+                            <SocialLinks />
+                        </div>
+
+                        <div>
+                            <div id="about-header" css={styles.stickyHeader}>
+                                <div>ABOUT</div>
+                            </div>
+                            <section id="about" css={paddedComponent}>
+                                <AboutSection />
+                            </section>
+                            <div id="experience-header" css={styles.stickyHeader}>
+                                <div>EXPERIENCE</div>
+                            </div>
+                            <section id="experience" css={paddedComponent}>
+                                <ExperienceSection />
+                            </section>
+                            <div id="projects-header" css={styles.stickyHeader}>
+                                <div>PROJECTS</div>
+                            </div>
+                            <section id="projects" css={paddedComponent}>
+                                <ProjectsSection />
+                            </section>
+                            <section id="footer" css={paddedComponent}>
+                                <FooterSection />
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            )}
+        </>
+    );
+}

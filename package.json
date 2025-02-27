@@ -22,18 +22,18 @@
         "@vercel/speed-insights": "^1.1.0",
         "animejs": "^3.2.2",
         "classnames": "^2.5.1",
-        "react": "^18.3.1",
-        "react-dom": "^18.3.1",
+        "next": "^15.2.0",
+        "react": "^19.0.0",
+        "react-dom": "^19.0.0",
         "react-icons": "^5.4.0",
         "react-scripts": "^5.0.1",
         "typescript": "^5.7.2",
         "web-vitals": "^2.1.0"
     },
     "scripts": {
-        "dev": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject"
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start"
     },
     "eslintConfig": {
         "extends": [

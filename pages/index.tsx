@@ -50,15 +50,15 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Peter Ghanem - Software Developer</title>
+                <title>Peter Ghanem - Software Engineer</title>
                 <meta
                     name="description"
-                    content="Peter is a software developer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                    content="Peter is a software engineer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
                 />
-                <meta property="og:title" content="Peter Ghanem - Software Developer" />
+                <meta property="og:title" content="Peter Ghanem - Software Engineer" />
                 <meta
                     property="og:description"
-                    content="Peter is a software developer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                    content="Peter is a software engineer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
                 />
                 <meta property="og:image" content="/apple-touch-icon.png" />
                 <meta property="og:url" content="https://peterghanem.com/" />

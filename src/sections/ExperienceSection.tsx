@@ -10,6 +10,13 @@ const ExperienceSection = (): React.ReactElement => {
     return (
         <div css={styles.experienceContainer}>
             <ExperienceBlock
+                startYear="2025"
+                endYear="Present"
+                jobTitle="Software Engineer II"
+                companyName="Together"
+                companyUrl="https://www.togetherplatform.com/"
+            />
+            <ExperienceBlock
                 startYear="2021"
                 endYear="2025"
                 jobTitle="Software Developer III (Team Lead)"

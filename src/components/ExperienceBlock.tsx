@@ -10,8 +10,8 @@ interface ExperienceBlockProps {
     prevTitle?: string;
     companyName: string;
     companyUrl: string;
-    description: string;
-    technologies: string[];
+    description?: string;
+    technologies?: string[];
 }
 
 export const ExperienceBlock: React.FC<ExperienceBlockProps> = ({

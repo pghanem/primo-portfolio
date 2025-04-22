@@ -6,8 +6,8 @@ import * as styles from "./ContentBlock.styles";
 
 interface ContentBlockProps {
     title: string;
-    description: string;
-    technologies: string[];
+    description?: string;
+    technologies?: string[];
     url?: string;
     leftContent: React.ReactNode;
     clickableLeft?: boolean;
@@ -42,7 +42,7 @@ export const ContentBlock: React.FC<ContentBlockProps> = ({
                 <div css={styles.description}>{description}</div>
 
                 <div css={styles.techPillsContainer}>
-                    {technologies.map((tech, index) => (
+                    {technologies && technologies.map((tech, index) => (
                         <div css={styles.techPill} key={index}>
                             {tech}
                         </div>

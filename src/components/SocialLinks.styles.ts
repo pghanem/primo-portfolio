@@ -18,6 +18,7 @@ export const grabEmailTooltip = css`
 export const emailCopiedTooltip = css`
     background-color: ${Colors.BLUE300};
     color: ${Colors.WHITE};
+    font-family: 'Inter', sans-serif;
 
     .tippy-arrow {
         color: ${Colors.BLUE300};

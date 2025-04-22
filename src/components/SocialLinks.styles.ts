@@ -8,6 +8,7 @@ export const linksContainer = css`
 export const grabEmailTooltip = css`
     background-color: ${Colors.BLUE400};
     color: ${Colors.WHITE};
+    font-family: 'Inter', sans-serif;
 
     .tippy-arrow {
         color: ${Colors.BLUE400};

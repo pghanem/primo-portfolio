@@ -13,30 +13,14 @@ const AboutSection = (): React.ReactElement => {
             <img src={"/headshot.png"} alt="Headshot" css={styles.headshot} />
 
             <div css={styles.paragraphContainer}>
-                I'm a developer passionate about building scalable, high-performance systems through thoughtful design and solid engineering. I thrive at the intersection of architecture and development, creating robust implementation plans and foundational systems that drive efficiency and maintainability.
+                I'm a software engineer passionate about building scalable, high-performance systems through thoughtful design and solid engineering. I thrive at the intersection of architecture and development, creating robust implementation plans and foundational systems that drive efficiency and maintainability.
             </div>
             <div css={styles.paragraphContainer}>
-                Currently, I’m a developer at{" "}
-                <div onClick={() => handleClick("https://www.jostle.me")} css={styles.clickable}>
-                    Jostle
+                Currently, I’m a Software Engineer II at{" "}
+                <div onClick={() => handleClick("https://www.togetherplatform.com/")} css={styles.clickable}>
+                    Together
                 </div>
-                , specializing in core feature rebuilds and stack modernization. I lead the planning, creation,
-                and maintenance of key systems, ensuring they are scalable, efficient, and future-proof. Highlights include
-                major updates like our recently released{" "}
-                <div
-                    onClick={() =>
-                        handleClick("https://forum.jostle.us/hc/en-us/articles/32027726971163-Search-updated-version")
-                    }
-                    css={styles.clickable}
-                >
-                    Search
-                </div>{" "}
-                platform.
-            </div>
-            <div css={styles.paragraphContainer}>
-                Right now, I'm working on a system-wide Collections framework, a unified approach to managing and
-                displaying structured data. On the side, I’m developing an AI-powered road trip app that curates music playlists
-                based on subtle factors like location, weather, and destination.
+                , where I help build full stack features for our mentorship platform that connects employees through smart matching, guided sessions, and seamless integrations.
             </div>
             <div css={styles.paragraphContainer}>
                 When I’m not coding, you’ll find me staying active, golfing, reading, spending time with family and

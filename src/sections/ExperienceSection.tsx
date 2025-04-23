@@ -15,6 +15,8 @@ const ExperienceSection = (): React.ReactElement => {
                 jobTitle="Software Engineer II"
                 companyName="Together"
                 companyUrl="https://www.togetherplatform.com/"
+                description="Contributing to full stack features on our mentorship platform."
+                technologies={["React", "Redux", "TypeScript", "GraphQL", "Node.js"]}
             />
             <ExperienceBlock
                 startYear="2021"

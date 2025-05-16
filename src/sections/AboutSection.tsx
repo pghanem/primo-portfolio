@@ -24,7 +24,7 @@ const AboutSection = (): React.ReactElement => {
             </div>
             <div css={styles.paragraphContainer}>
                 When I’m not coding, you’ll find me staying active, golfing, reading, spending time with family and
-                friends, or getting lost in a good PC game.
+                friends, or exploring different parts of the world.
             </div>
         </div>
     );

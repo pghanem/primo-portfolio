@@ -3,6 +3,8 @@ import React from "react";
 
 import * as styles from "./ExperienceSection.styles";
 import ExperienceBlock from "../components/ExperienceBlock";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 
 const ExperienceSection = (): React.ReactElement => {
     return (

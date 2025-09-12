@@ -55,11 +55,11 @@ const ExperienceSection = (): React.ReactElement => {
                 description="Led test automation initiatives across web, mobile, Xbox, and Microsoft HoloLens platforms. Implemented comprehensive QA processes that strengthened product reliability and user experience."
                 technologies={["Selenium WebDriver", "Python"]}
             />
-            {/*<div css={{ paddingTop: "1rem" }}>*/}
-            {/*    <div css={styles.viewResumeButton} onClick={() => window.open("/Peter_Ghanem_Resume.pdf", "_blank")}>*/}
-            {/*        View Full Resume <FontAwesomeIcon icon={faUpRightFromSquare} css={{ marginLeft: "5px" }} />*/}
-            {/*    </div>*/}
-            {/*</div>*/}
+            <div css={{ paddingTop: "1rem" }}>
+               <div css={styles.viewResumeButton} onClick={() => window.open("/Peter_Ghanem_Resume.pdf", "_blank")}>
+                   View Full Resume <FontAwesomeIcon icon={faUpRightFromSquare} css={{ marginLeft: "5px" }} />
+                </div>
+            </div>
         </div>
     );
 };

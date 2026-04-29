@@ -10,7 +10,7 @@ const AboutSection = (): React.ReactElement => {
 
     return (
         <div css={styles.aboutContainer}>
-            <img src={"/headshot2.png"} alt="Headshot" css={styles.headshot} />
+            <img src={"/headshot.png"} alt="Headshot" css={styles.headshot} />
 
             <div css={styles.paragraphContainer}>
                 I'm a software engineer passionate about building scalable, high-performance systems through thoughtful design and solid engineering. I thrive at the intersection of architecture and development, creating robust implementation plans and foundational systems that drive efficiency and maintainability.

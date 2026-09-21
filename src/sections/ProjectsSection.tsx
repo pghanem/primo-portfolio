@@ -9,6 +9,15 @@ const ProjectsSection = (): React.ReactElement => {
         <div css={styles.projectsContainer}>
             <ProjectBlock
                 description={
+                    "Golf simulator rentals for corporate events across BC — I build the site and the booking system."
+                }
+                projectTitle={"Cadence Golf Co."}
+                technologies={["TypeScript", "Next.js", "Tailwind CSS"]}
+                thumbnail={"/primoThumbnail.png"}
+                projectUrl={"https://www.cadencegolf.co"}
+            />
+            <ProjectBlock
+                description={
                     "Currently in development. Roadio is an AI-powered road trip music app that curates playlists based on subtle factors such as your location, the weather, and your destination."
                 }
                 projectTitle={"Roadio"}

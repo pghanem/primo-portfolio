@@ -8,6 +8,7 @@ const HeroSection = (): React.ReactElement => {
             <div>
                 <div css={styles.name}>Peter Ghanem</div>
                 <div css={styles.title}>Software Engineer</div>
+                <div css={styles.location}>Vancouver, British Columbia, Canada</div>
                 <div>I build seamless, precision-crafted digital experiences.</div>
             </div>
         </div>

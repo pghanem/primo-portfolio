@@ -53,12 +53,12 @@ export default function Home() {
                 <title>Peter Ghanem - Software Engineer</title>
                 <meta
                     name="description"
-                    content="Peter is a software engineer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                    content="Full-stack engineer with seven years across TypeScript, React, and Java, now building production LLM systems end to end. Picks up whatever the problem needs, most recently .NET and Python."
                 />
                 <meta property="og:title" content="Peter Ghanem - Software Engineer" />
                 <meta
                     property="og:description"
-                    content="Peter is a software engineer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
+                    content="Full-stack engineer with seven years across TypeScript, React, and Java, now building production LLM systems end to end. Picks up whatever the problem needs, most recently .NET and Python."
                 />
                 <meta property="og:image" content="/apple-touch-icon.png" />
                 <meta property="og:url" content="https://peterghanem.com/" />

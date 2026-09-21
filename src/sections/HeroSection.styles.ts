@@ -28,3 +28,9 @@ export const title = css`
     margin-bottom: 0.5rem;
     color: ${Colors.BLUE100};
 `;
+
+export const location = css`
+    margin-bottom: 0.5rem;
+    color: ${Colors.BLUE100};
+    opacity: 0.9;
+`;

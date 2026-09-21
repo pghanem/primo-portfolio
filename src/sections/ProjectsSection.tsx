@@ -13,7 +13,7 @@ const ProjectsSection = (): React.ReactElement => {
                 }
                 projectTitle={"Cadence Golf Co."}
                 technologies={["TypeScript", "Next.js", "Tailwind CSS"]}
-                thumbnail={"/primoThumbnail.png"}
+                thumbnail={"/cadenceThumbnail.png"}
                 projectUrl={"https://www.cadencegolf.co"}
             />
             <ProjectBlock

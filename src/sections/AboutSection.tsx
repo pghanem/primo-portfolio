@@ -13,17 +13,14 @@ const AboutSection = (): React.ReactElement => {
             <img src={"/headshot.png"} alt="Headshot" css={styles.headshot} />
 
             <div css={styles.paragraphContainer}>
-                Full-stack engineer with seven years across TypeScript, React, and Java, now building production LLM systems end to end. Picks up whatever the problem needs, most recently .NET and Python.
-            </div>
-            <div css={styles.paragraphContainer}>
-                Proficient: TypeScript/JavaScript, Java, C#, Python, SQL. AI & ML: RAG, grounded generation, agent orchestration, tool use, AWS Bedrock, MCP. Frontend: React, Redux. Backend: REST, GraphQL, Node.js, .NET. Databases: MySQL. Cloud & Infrastructure: AWS (SNS/SQS, S3), Docker, event-driven microservices.
+                I'm a software engineer passionate about building scalable, high-performance systems through thoughtful design and solid engineering. I thrive at the intersection of architecture and development, creating robust implementation plans and foundational systems that drive efficiency and maintainability.
             </div>
             <div css={styles.paragraphContainer}>
                 Currently, I’m a Software Engineer II at{" "}
                 <div onClick={() => handleClick("https://www.togetherplatform.com/")} css={styles.clickable}>
-                    Together (YC S19), an Absorb Software company
+                    Together
                 </div>
-                , based in Vancouver, British Columbia, Canada.
+                , where I help build full stack features for our mentorship platform that connects employees through smart matching, guided sessions, and seamless integrations.
             </div>
             <div css={styles.paragraphContainer}>
                 When I’m not coding, you’ll find me staying active, golfing, reading, spending time with family and

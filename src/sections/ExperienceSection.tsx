@@ -8,38 +8,38 @@ const ExperienceSection = (): React.ReactElement => {
     return (
         <div css={styles.experienceContainer}>
             <ExperienceBlock
-                startYear="Apr. 2025"
+                startYear="2025"
                 endYear="Present"
                 jobTitle="Software Engineer II"
-                companyName="Together (YC S19), an Absorb Software company"
+                companyName="Together"
                 companyUrl="https://www.togetherplatform.com/"
-                description="Building AI products inside the learning platform, and the internal agent tooling behind how the company ships software."
-                technologies={["C#/.NET", "Python", "TypeScript", "React", "AWS"]}
+                description="Contributing to full stack features on our mentorship platform, including leading the end-to-end development of a user data export system—handling background job processing, secure link generation, and email delivery."
+                technologies={["React", "Redux", "TypeScript", "GraphQL", "Node.js"]}
             />
             <ExperienceBlock
                 startYear="2021"
                 endYear="2025"
-                jobTitle="Software Developer III (Team Lead)"
-                prevTitle="Software Developer II"
+                jobTitle="Software Engineer III (Team Lead)"
+                prevTitle="Software Engineer II"
                 companyName="Jostle"
                 companyUrl="https://www.jostle.me"
-                description="Led the Search UI team and rebuilt the platform's search experience end to end."
+                description="Led and mentored a development team while driving key technical initiatives. I architected Collections UI, a unified platform approach to displaying list-type data, and led the UI team's complete Search interface rebuild. Implemented critical features including the document sign-off system and a reusable file upload interface."
                 technologies={["React", "Redux", "TypeScript", "Java", "GraphQL"]}
             />
             <ExperienceBlock
                 startYear="2019"
                 endYear="2021"
                 jobTitle="Software Architect"
-                prevTitle="Software Developer"
-                companyName="Ensemble Systems"
+                prevTitle="Software Engineer"
+                companyName="Ensemble"
                 companyUrl="https://www.ensemble.com/"
-                description="Built streaming applications for Roku and Java integrations for Adobe CMS."
+                description="Served as Software Architect, designing scalable Adobe CMS solutions and building full-stack media applications. Created automated workflows for Adobe InDesign to HTML conversion and delivered Netflix-style user experiences for Roku TV."
                 technologies={["Java", "Node.js", "React", "React Native"]}
             />
             <ExperienceBlock
                 startYear="2017"
                 endYear="2018"
-                jobTitle="Software Developer Intern"
+                jobTitle="Software Engineer Intern"
                 companyName="iSpace Lab"
                 companyUrl="http://ispace.iat.sfu.ca/"
                 description="Built an immersive Unity virtual reality game, optimizing checkpoints, models, and scripts to create awe‑inducing experiences for academic research."

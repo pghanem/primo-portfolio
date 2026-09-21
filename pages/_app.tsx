@@ -16,7 +16,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
                 <link rel="manifest" href="/manifest.json" />
                 <meta
                     name="description"
-                    content="Full-stack engineer with seven years across TypeScript, React, and Java, now building production LLM systems end to end. Picks up whatever the problem needs, most recently .NET and Python."
+                    content="Peter is a software engineer from Vancouver, Canada. He loves helping organizations build ambitious yet scalable digital experiences."
                 />
             </Head>
             <Global styles={globalStyles} />
